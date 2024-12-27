@@ -15,22 +15,6 @@ module.exports = {
 				jakarta: ['Plus Jakarta Sans', 'sans-serif'],
 				inter: ['Inter', 'sans-serif'],
 			},
-			colors: {
-				primary: '#00040F',
-			},
-			keyframes: {
-				'fade-in': {
-					from: {
-						opacity: 0,
-					},
-					to: {
-						opacity: 1,
-					},
-				},
-			},
-			animation: {
-				fadeIn: 'fade-in .3s ease',
-			},
 		},
 	},
 	plugins: [require('@tailwindcss/forms')],
