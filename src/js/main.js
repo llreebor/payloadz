@@ -74,3 +74,39 @@ function togglePriceSelect() {
 	}
 }
 togglePriceSelect()
+
+// Copy to Clipboard
+function copyToClipboard(textId, buttonId) {
+	const text = document.getElementById(textId)
+	const button = document.getElementById(buttonId)
+
+	if (button) {
+		button.addEventListener('click', () => {
+			navigator.clipboard.writeText(text.textContent)
+		})
+	}
+}
+
+copyToClipboard('link-text', 'link-btn')
+copyToClipboard('code-text', 'code-btn')
+
+// Toggle Hidden Content in step 4
+function toggleVisibility() {
+	const items = document.querySelectorAll('.radio-item input[type="radio"]')
+	items.forEach((radio) => {
+		radio.addEventListener('change', function () {
+			// Hide all hidden blocks first
+			document.querySelectorAll('.radio-hidden').forEach((block) => {
+				block.classList.add('hidden')
+			})
+
+			// Show the hidden block corresponding to the checked radio
+			if (this.checked) {
+				const hiddenBlock =
+					this.closest('.radio-item').querySelector('.radio-hidden')
+				hiddenBlock.classList.remove('hidden')
+			}
+		})
+	})
+}
+toggleVisibility()
