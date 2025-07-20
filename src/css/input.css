@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+/* Variables */
+@theme {
+	/* Container */
+	--container-width-in-figma: 1240px;
+	--container-side-padding: 24px;
+	--container-max-width: calc(
+		var(--container-width-in-figma) + 2 * var(--container-side-padding)
+	);
+
+	/* Fonts */
+	--font-inter: "Inter", sans-serif;
+
+	/* Colors */
+	--color-purple-300: #ff385c;
+	--color-purple-500: #da0b66;
+
+	/* Shadow */
+	--shadow-input: 0px 2px 16px 0px rgba(0, 0, 0, 0.12);
+
+	/* Animations */
+	--animate-fadeIn: fadeIn 0.3s ease-out;
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+}
+
+/* Container max-width & paddings */
+@utility container {
+	@apply mx-auto max-w-(--container-max-width) px-(--container-side-padding);
+}
+
+/* Base Elements  */
+@layer base {
+	body {
+		@apply font-inter;
+	}
+	button {
+		@apply cursor-pointer;
+	}
+}
+
+/* Custom Components */
+@layer components {
+	/* Button */
+	.btn {
+		@apply inline-block;
+	}
+	/* Input */
+	.input {
+		@apply shadow-input flex w-full rounded-full border border-[#DDD] px-4 py-[15px] pr-12 text-sm tracking-[0.28px] placeholder:text-[#A9AFAD] focus:outline-purple-500;
+	}
+}
+
+/* Utility Classes */
+@layer utilities {
+	/* Mobile Menu */
+	.mobile-menu.is-open {
+		@apply visible opacity-100;
+	}
+}
