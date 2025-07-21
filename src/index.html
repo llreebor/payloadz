@@ -174,7 +174,9 @@
 				<div class="container">
 					<!-- Menus -->
 					<div class="flex flex-col md:flex-row md:justify-between md:gap-5">
-						<div class="border-b border-b-[#DDD] py-5 first:pt-0 md:border-0">
+						<div
+							class="border-b border-b-[#DDD] py-5 first:pt-0 md:border-0 md:pt-0 md:pb-10"
+						>
 							<p
 								class="text-sm font-semibold tracking-[0.28px] text-[#1F1F1F] md:text-base"
 							>
@@ -232,7 +234,9 @@
 								</li>
 							</ul>
 						</div>
-						<div class="border-b border-b-[#DDD] py-5 first:pt-0 md:border-0">
+						<div
+							class="border-b border-b-[#DDD] py-5 first:pt-0 md:border-0 md:pt-0 md:pb-10"
+						>
 							<p
 								class="text-sm font-semibold tracking-[0.28px] text-[#1F1F1F] md:text-base"
 							>
@@ -322,7 +326,9 @@
 								</li>
 							</ul>
 						</div>
-						<div class="border-b border-b-[#DDD] py-5 first:pt-0 md:border-0">
+						<div
+							class="border-b border-b-[#DDD] py-5 first:pt-0 md:border-0 md:pt-0 md:pb-10"
+						>
 							<p
 								class="text-sm font-semibold tracking-[0.28px] text-[#1F1F1F] md:text-base"
 							>
@@ -383,8 +389,10 @@
 					</div>
 
 					<!-- Lang & Social & Copy -->
-					<div class="flex flex-col gap-5 pt-5">
-						<div class="flex flex-col gap-3.5">
+					<div
+						class="flex flex-col gap-5 pt-5 lg:flex-row-reverse lg:justify-between lg:border-t lg:border-t-[#DDD] lg:pt-10"
+					>
+						<div class="flex flex-col gap-3.5 md:flex-row">
 							<!-- Selects -->
 							<div class="flex items-center gap-5">
 								<!-- Lang Select -->
@@ -545,33 +553,84 @@
 								</li>
 							</ul>
 						</div>
-						<div>
-							<p class="text-[10px] tracking-[0.2px] text-[#373737]">
-								© 2025 Payloadz, Inc
+						<div class="flex flex-col gap-1 md:flex-row">
+							<p
+								class="text-[10px] tracking-[0.2px] text-[#373737] md:text-base lg:hidden"
+							>
+								©
+								<span class="md:hidden">2025</span>
+								Payloadz
+								<span class="md:hidden">, Inc</span>
 							</p>
 
-							<ul class="flex items-center gap-4">
+							<ul class="flex items-center gap-2 min-[420px]:gap-4">
+								<li class="hidden leading-0 md:block">
+									<a
+										href="#"
+										class="block text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors hover:text-purple-500 md:text-base"
+									>
+										©
+										<span class="md:hidden">2025</span>
+										Payloadz
+										<span class="md:hidden">, Inc</span>
+									</a>
+								</li>
+								<li class="hidden md:block">
+									<div
+										class="mt-[2px] block size-1 rounded-full bg-[#373737]"
+									></div>
+								</li>
 								<li class="leading-0">
 									<a
 										href="#"
-										class="block text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors"
+										class="block text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors hover:text-purple-500 md:text-base"
 									>
 										Terms
 									</a>
 								</li>
 								<li>
-									<div class="block size-1 rounded-full bg-[#373737]"></div>
+									<div
+										class="mt-[2px] block size-1 rounded-full bg-[#373737]"
+									></div>
 								</li>
 								<li class="leading-0">
 									<a
 										href="#"
-										class="block text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors"
+										class="block text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors hover:text-purple-500 md:text-base"
 									>
 										Sitemap
 									</a>
 								</li>
 								<li>
-									<div class="block size-1 rounded-full bg-[#373737]"></div>
+									<div
+										class="mt-[2px] block size-1 rounded-full bg-[#373737]"
+									></div>
+								</li>
+								<li class="leading-0">
+									<a
+										href="#"
+										class="block text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors hover:text-purple-500 md:text-base"
+									>
+										Privacy
+									</a>
+								</li>
+								<li>
+									<div
+										class="mt-[2px] block size-1 rounded-full bg-[#373737]"
+									></div>
+								</li>
+								<li class="flex items-center gap-[18px] leading-0">
+									<a
+										href="#"
+										class="block shrink-0 text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors hover:text-purple-500 md:text-base"
+									>
+										Your privacy choices
+									</a>
+									<img
+										class="hidden min-[375px]:block"
+										src="./images/icons/choice.svg"
+										alt="choice icon"
+									/>
 								</li>
 							</ul>
 						</div>
