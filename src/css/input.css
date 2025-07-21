@@ -14,12 +14,13 @@
 
 	/* Colors */
 	--color-purple-300: #ff385c;
-	--color-purple-500: #da0b66;
+	--color-primary: #da0b66;
+	--color-primary-hovered: #c00757;
 
 	/* Shadow */
 	--shadow-input: 0px 2px 16px 0px rgba(0, 0, 0, 0.12);
 	--shadow-slide-badge: 0px 1px 1px 0px rgba(0, 0, 0, 0.08);
-
+	--shadow-base: 0px 2px 12px 0px rgba(0, 0, 0, 0.16);
 	/* Animations */
 	--animate-fadeIn: fadeIn 0.3s ease-out;
 
@@ -56,7 +57,7 @@
 	}
 	/* Input */
 	.input {
-		@apply shadow-input flex w-full rounded-full border border-[#DDD] px-4 py-[15px] pr-12 text-sm tracking-[0.28px] placeholder:text-[#A9AFAD] focus:outline-purple-500;
+		@apply shadow-input focus:outline-primary flex w-full rounded-full border border-[#DDD] px-4 py-[15px] pr-12 text-sm tracking-[0.28px] placeholder:text-[#A9AFAD];
 	}
 }
 
