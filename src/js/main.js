@@ -48,7 +48,53 @@ new Swiper(".swiper-category-1", {
 			slidesPerView: 2.1,
 		},
 		768: {
-			slidesPerView: 3,
+			slidesPerView: 2.3,
+		},
+		992: {
+			slidesPerView: 4,
+		},
+	},
+})
+new Swiper(".swiper-category-2", {
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-category-2-next",
+		prevEl: ".swiper-category-2-prev",
+	},
+	spaceBetween: 12,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1.5,
+		},
+		460: {
+			slidesPerView: 2.1,
+		},
+		768: {
+			slidesPerView: 2.3,
+		},
+		992: {
+			slidesPerView: 4,
+		},
+	},
+})
+new Swiper(".swiper-category-3", {
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-category-3-next",
+		prevEl: ".swiper-category-3-prev",
+	},
+	spaceBetween: 12,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1.5,
+		},
+		460: {
+			slidesPerView: 2.1,
+		},
+		768: {
+			slidesPerView: 2.3,
 		},
 		992: {
 			slidesPerView: 4,
