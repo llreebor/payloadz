@@ -30,3 +30,28 @@ initializeCustomSelect(
 	"options-currency",
 	"selected-option-currency",
 )
+
+// Sliders
+new Swiper(".swiper-category-1", {
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-category-1-next",
+		prevEl: ".swiper-category-1-prev",
+	},
+	spaceBetween: 12,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1.5,
+		},
+		460: {
+			slidesPerView: 2.1,
+		},
+		768: {
+			slidesPerView: 3,
+		},
+		992: {
+			slidesPerView: 4,
+		},
+	},
+})

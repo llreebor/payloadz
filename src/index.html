@@ -4,13 +4,21 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Payloadz</title>
+		<!-- Styles -->
 		<link rel="stylesheet" href="./css/output.css" />
 
+		<!-- Fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
 			rel="stylesheet"
+		/>
+
+		<!-- Libs -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 		/>
 	</head>
 	<body class="relative h-full">
@@ -86,7 +94,619 @@
 
 			<!-- Main Content -->
 			<main class="flex-auto">
-				<div class="container mt-20"></div>
+				<section class="overflow-hidden py-10">
+					<div class="container">
+						<div class="flex flex-col gap-10 md:flex-row">
+							<!-- Left Hav -->
+							<div
+								class="space-y-5 overflow-hidden md:max-w-[320px] md:shrink-0 md:space-y-3"
+							>
+								<p
+									class="hidden text-xl font-medium tracking-[0.4px] text-[#47484B] md:block"
+								>
+									Categories
+								</p>
+								<ul
+									class="flex shrink-0 overflow-auto md:flex-col md:overflow-visible [&_li]:shrink-0"
+								>
+									<li>
+										<button
+											class="flex w-full shrink-0 items-center gap-3 p-4 transition-colors md:rounded-[20px] md:p-5 md:hover:bg-[#F3F3F3]"
+										>
+											<img
+												src="./images/icons/sidebar-icon-1.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Crafting
+											</p>
+										</button>
+									</li>
+									<li>
+										<button
+											class="flex w-full shrink-0 items-center gap-3 p-4 transition-colors md:rounded-[20px] md:p-5 md:hover:bg-[#F3F3F3]"
+										>
+											<img
+												src="./images/icons/sidebar-icon-2.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												eBooks
+											</p>
+										</button>
+									</li>
+									<li>
+										<button
+											class="flex w-full shrink-0 items-center gap-3 p-4 transition-colors md:rounded-[20px] md:p-5 md:hover:bg-[#F3F3F3]"
+										>
+											<img
+												src="./images/icons/sidebar-icon-3.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Documents and forms
+											</p>
+										</button>
+									</li>
+									<li>
+										<button
+											class="flex w-full shrink-0 items-center gap-3 p-4 transition-colors md:rounded-[20px] md:p-5 md:hover:bg-[#F3F3F3]"
+										>
+											<img
+												src="./images/icons/sidebar-icon-4.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Software
+											</p>
+										</button>
+									</li>
+									<li>
+										<button
+											class="flex w-full shrink-0 items-center gap-3 p-4 transition-colors md:rounded-[20px] md:p-5 md:hover:bg-[#F3F3F3]"
+										>
+											<img
+												src="./images/icons/sidebar-icon-5.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Video
+											</p>
+										</button>
+									</li>
+									<li>
+										<button
+											class="flex w-full shrink-0 items-center gap-3 p-4 transition-colors md:rounded-[20px] md:p-5 md:hover:bg-[#F3F3F3]"
+										>
+											<img
+												src="./images/icons/sidebar-icon-6.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Audio files
+											</p>
+										</button>
+									</li>
+									<li>
+										<button
+											class="flex w-full shrink-0 items-center gap-3 p-4 transition-colors md:rounded-[20px] md:p-5 md:hover:bg-[#F3F3F3]"
+										>
+											<img
+												src="./images/icons/sidebar-icon-7.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Other files
+											</p>
+										</button>
+									</li>
+								</ul>
+
+								<a
+									href="#"
+									class="flex items-center justify-center gap-2 rounded bg-[#E6E6E6] p-3 text-sm font-semibold tracking-[0.28px] text-[#393939] transition-colors hover:bg-[#E1E1E1]"
+								>
+									<img
+										src="./images/icons/money-exchange.svg"
+										alt="money icon"
+									/>
+									Share and Earn
+								</a>
+							</div>
+							<!-- Right Content -->
+							<div class="flex w-full flex-col gap-10 overflow-hidden">
+								<!-- Item -->
+								<div class="">
+									<!-- Header & Controls -->
+									<div class="flex justify-between gap-5">
+										<a
+											href="#"
+											class="flex items-center gap-3 font-semibold tracking-[0.32px] text-[#1E1E1E] md:text-2xl"
+										>
+											eBooks
+											<img src="./images/icons/arrow.svg" alt="arrow icon" />
+										</a>
+
+										<div class="hidden md:flex md:items-center md:gap-3">
+											<button
+												class="swiper-category-1-prev flex size-9 items-center justify-center rounded-full border border-[#E3E3E3] bg-[#E3E3E3] hover:bg-[#E3E3E3]/50"
+											>
+												<img
+													class="rotate-180"
+													src="./images/icons/arrow.svg"
+													alt="arrow icon"
+												/>
+											</button>
+											<button
+												class="swiper-category-1-next flex size-9 items-center justify-center rounded-full border border-[#E3E3E3] bg-[#E3E3E3] hover:bg-[#E3E3E3]/50"
+											>
+												<img src="./images/icons/arrow.svg" alt="arrow icon" />
+											</button>
+										</div>
+									</div>
+									<!-- Slider -->
+									<!-- Slider main container -->
+									<div
+										class="swiper swiper-category-1 mt-4 overflow-visible! md:overflow-hidden!"
+									>
+										<!-- Additional required wrapper -->
+										<div class="swiper-wrapper">
+											<!-- Slides -->
+											<a href="#" class="swiper-slide group">
+												<div>
+													<!-- Image & Badges -->
+													<div
+														class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+													>
+														<img
+															class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+															src="./images/global/slide-image.png"
+															alt="slide image"
+														/>
+														<div
+															class="flex items-center justify-between gap-3"
+														>
+															<p
+																class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+															>
+																Guest favorite
+															</p>
+
+															<div
+																class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+															>
+																<img
+																	src="./images/icons/money-exchange-white.svg"
+																	alt="icon"
+																/>
+															</div>
+														</div>
+													</div>
+
+													<!-- Info -->
+													<div class="mt-2 space-y-1">
+														<p class="text-sm font-semibold tracking-[0.28px]">
+															Product name
+														</p>
+
+														<ul class="flex items-center gap-2.5">
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<p>$140</p>
+															</li>
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<img
+																	src="./images/icons/star.svg"
+																	alt="star icon"
+																/>
+																<p>4.94</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="swiper-slide group">
+												<div>
+													<!-- Image & Badges -->
+													<div
+														class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+													>
+														<img
+															class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+															src="./images/global/slide-image.png"
+															alt="slide image"
+														/>
+														<div
+															class="flex items-center justify-between gap-3"
+														>
+															<p
+																class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+															>
+																Guest favorite
+															</p>
+
+															<div
+																class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+															>
+																<img
+																	src="./images/icons/money-exchange-white.svg"
+																	alt="icon"
+																/>
+															</div>
+														</div>
+													</div>
+
+													<!-- Info -->
+													<div class="mt-2 space-y-1">
+														<p class="text-sm font-semibold tracking-[0.28px]">
+															Product name
+														</p>
+
+														<ul class="flex items-center gap-2.5">
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<p>$140</p>
+															</li>
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<img
+																	src="./images/icons/star.svg"
+																	alt="star icon"
+																/>
+																<p>4.94</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="swiper-slide group">
+												<div>
+													<!-- Image & Badges -->
+													<div
+														class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+													>
+														<img
+															class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+															src="./images/global/slide-image.png"
+															alt="slide image"
+														/>
+														<div
+															class="flex items-center justify-between gap-3"
+														>
+															<p
+																class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+															>
+																Guest favorite
+															</p>
+
+															<div
+																class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+															>
+																<img
+																	src="./images/icons/money-exchange-white.svg"
+																	alt="icon"
+																/>
+															</div>
+														</div>
+													</div>
+
+													<!-- Info -->
+													<div class="mt-2 space-y-1">
+														<p class="text-sm font-semibold tracking-[0.28px]">
+															Product name
+														</p>
+
+														<ul class="flex items-center gap-2.5">
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<p>$140</p>
+															</li>
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<img
+																	src="./images/icons/star.svg"
+																	alt="star icon"
+																/>
+																<p>4.94</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="swiper-slide group">
+												<div>
+													<!-- Image & Badges -->
+													<div
+														class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+													>
+														<img
+															class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+															src="./images/global/slide-image.png"
+															alt="slide image"
+														/>
+														<div
+															class="flex items-center justify-between gap-3"
+														>
+															<p
+																class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+															>
+																Guest favorite
+															</p>
+
+															<div
+																class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+															>
+																<img
+																	src="./images/icons/money-exchange-white.svg"
+																	alt="icon"
+																/>
+															</div>
+														</div>
+													</div>
+
+													<!-- Info -->
+													<div class="mt-2 space-y-1">
+														<p class="text-sm font-semibold tracking-[0.28px]">
+															Product name
+														</p>
+
+														<ul class="flex items-center gap-2.5">
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<p>$140</p>
+															</li>
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<img
+																	src="./images/icons/star.svg"
+																	alt="star icon"
+																/>
+																<p>4.94</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="swiper-slide group">
+												<div>
+													<!-- Image & Badges -->
+													<div
+														class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+													>
+														<img
+															class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+															src="./images/global/slide-image.png"
+															alt="slide image"
+														/>
+														<div
+															class="flex items-center justify-between gap-3"
+														>
+															<p
+																class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+															>
+																Guest favorite
+															</p>
+
+															<div
+																class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+															>
+																<img
+																	src="./images/icons/money-exchange-white.svg"
+																	alt="icon"
+																/>
+															</div>
+														</div>
+													</div>
+
+													<!-- Info -->
+													<div class="mt-2 space-y-1">
+														<p class="text-sm font-semibold tracking-[0.28px]">
+															Product name
+														</p>
+
+														<ul class="flex items-center gap-2.5">
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<p>$140</p>
+															</li>
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<img
+																	src="./images/icons/star.svg"
+																	alt="star icon"
+																/>
+																<p>4.94</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="swiper-slide group">
+												<div>
+													<!-- Image & Badges -->
+													<div
+														class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+													>
+														<img
+															class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+															src="./images/global/slide-image.png"
+															alt="slide image"
+														/>
+														<div
+															class="flex items-center justify-between gap-3"
+														>
+															<p
+																class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+															>
+																Guest favorite
+															</p>
+
+															<div
+																class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+															>
+																<img
+																	src="./images/icons/money-exchange-white.svg"
+																	alt="icon"
+																/>
+															</div>
+														</div>
+													</div>
+
+													<!-- Info -->
+													<div class="mt-2 space-y-1">
+														<p class="text-sm font-semibold tracking-[0.28px]">
+															Product name
+														</p>
+
+														<ul class="flex items-center gap-2.5">
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<p>$140</p>
+															</li>
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<img
+																	src="./images/icons/star.svg"
+																	alt="star icon"
+																/>
+																<p>4.94</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="swiper-slide group">
+												<div>
+													<!-- Image & Badges -->
+													<div
+														class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+													>
+														<img
+															class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+															src="./images/global/slide-image.png"
+															alt="slide image"
+														/>
+														<div
+															class="flex items-center justify-between gap-3"
+														>
+															<p
+																class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+															>
+																Guest favorite
+															</p>
+
+															<div
+																class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+															>
+																<img
+																	src="./images/icons/money-exchange-white.svg"
+																	alt="icon"
+																/>
+															</div>
+														</div>
+													</div>
+
+													<!-- Info -->
+													<div class="mt-2 space-y-1">
+														<p class="text-sm font-semibold tracking-[0.28px]">
+															Product name
+														</p>
+
+														<ul class="flex items-center gap-2.5">
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<p>$140</p>
+															</li>
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<img
+																	src="./images/icons/star.svg"
+																	alt="star icon"
+																/>
+																<p>4.94</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+											<a href="#" class="swiper-slide group">
+												<div>
+													<!-- Image & Badges -->
+													<div
+														class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+													>
+														<img
+															class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+															src="./images/global/slide-image.png"
+															alt="slide image"
+														/>
+														<div
+															class="flex items-center justify-between gap-3"
+														>
+															<p
+																class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+															>
+																Guest favorite
+															</p>
+
+															<div
+																class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+															>
+																<img
+																	src="./images/icons/money-exchange-white.svg"
+																	alt="icon"
+																/>
+															</div>
+														</div>
+													</div>
+
+													<!-- Info -->
+													<div class="mt-2 space-y-1">
+														<p class="text-sm font-semibold tracking-[0.28px]">
+															Product name
+														</p>
+
+														<ul class="flex items-center gap-2.5">
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<p>$140</p>
+															</li>
+															<li
+																class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+															>
+																<img
+																	src="./images/icons/star.svg"
+																	alt="star icon"
+																/>
+																<p>4.94</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
 			</main>
 
 			<!-- Mobile Navigation -->
@@ -639,7 +1259,9 @@
 			</footer>
 		</div>
 
-		<!-- JS -->
+		<!-- Libs -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- Custom JS -->
 		<script src="./js/main.js"></script>
 	</body>
 </html>

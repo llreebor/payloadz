@@ -18,6 +18,7 @@
 
 	/* Shadow */
 	--shadow-input: 0px 2px 16px 0px rgba(0, 0, 0, 0.12);
+	--shadow-slide-badge: 0px 1px 1px 0px rgba(0, 0, 0, 0.08);
 
 	/* Animations */
 	--animate-fadeIn: fadeIn 0.3s ease-out;
@@ -64,5 +65,12 @@
 	/* Mobile Menu */
 	.mobile-menu.is-open {
 		@apply visible opacity-100;
+	}
+}
+.swiper-button-disabled {
+	background: white;
+	cursor: not-allowed;
+	img {
+		opacity: 0.2;
 	}
 }
