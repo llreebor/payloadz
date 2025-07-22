@@ -123,6 +123,32 @@ new Swiper(".swiper-reviews", {
 		rows: 2,
 	},
 })
+new Swiper(".swiper-similar", {
+	// Navigation arrows
+	navigation: {
+		nextEl: ".swiper-similar-next",
+		prevEl: ".swiper-similar-prev",
+	},
+	spaceBetween: 12,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1.5,
+		},
+		460: {
+			slidesPerView: 2.1,
+		},
+		768: {
+			slidesPerView: 2.3,
+		},
+		992: {
+			slidesPerView: 4,
+		},
+		1024: {
+			slidesPerView: 5,
+		},
+	},
+})
 
 // Show More Review
 function showMoreReviews() {
