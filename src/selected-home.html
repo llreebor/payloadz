@@ -48,7 +48,7 @@
 										width="36"
 										height="36"
 										rx="18"
-										fill="#FF385C"
+										fill="#3eb3f3"
 										class="group-hover:fill-primary transition-colors"
 									/>
 									<path
@@ -61,11 +61,11 @@
 
 						<!-- Menu -->
 						<nav class="flex justify-center lg:order-2">
-							<ul class="flex items-center gap-4 min-[374px]:gap-8">
+							<ul class="flex items-center gap-4">
 								<li>
 									<a
 										href="#"
-										class="hover:text-primary text-sm font-semibold tracking-[0.28px] text-[#333] transition-colors"
+										class="rounded-lg p-2 text-sm font-semibold tracking-[0.28px] text-[#333] transition-colors hover:bg-gray-100"
 									>
 										Sell Downloads
 									</a>
@@ -73,7 +73,7 @@
 								<li>
 									<a
 										href="#"
-										class="hover:text-primary text-sm font-semibold tracking-[0.28px] text-[#333] transition-colors"
+										class="rounded-lg p-2 text-sm font-semibold tracking-[0.28px] text-[#333] transition-colors hover:bg-gray-100"
 									>
 										Order Search
 									</a>
@@ -81,7 +81,7 @@
 								<li>
 									<a
 										href="#"
-										class="hover:text-primary text-sm font-semibold tracking-[0.28px] text-[#333] transition-colors"
+										class="rounded-lg p-2 text-sm font-semibold tracking-[0.28px] text-[#333] transition-colors hover:bg-gray-100"
 									>
 										Help
 									</a>
@@ -218,10 +218,10 @@
 											</p>
 										</div>
 
-										<div class="hidden items-center gap-4 md:flex">
+										<div class="hidden items-center gap-4 md:-mr-2 md:flex">
 											<a
 												href="#"
-												class="group hover:text-primary flex items-center gap-2 tracking-[0.32px] text-[#424242] underline underline-offset-4 transition-colors"
+												class="group flex items-center gap-2 rounded-lg p-2 tracking-[0.32px] text-[#424242] underline underline-offset-4 transition-colors hover:bg-gray-100"
 											>
 												<svg
 													xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,6 @@
 														stroke-width="2"
 														stroke-linecap="round"
 														stroke-linejoin="round"
-														class="group-hover:stroke-primary transition-colors"
 													/>
 												</svg>
 												Share
@@ -244,7 +243,7 @@
 
 											<a
 												href="#"
-												class="group hover:text-primary flex items-center gap-2 tracking-[0.32px] text-[#424242] underline underline-offset-4 transition-colors"
+												class="group flex items-center gap-2 rounded-lg p-2 tracking-[0.32px] text-[#424242] underline underline-offset-4 transition-colors hover:bg-gray-100"
 											>
 												<svg
 													xmlns="http://www.w3.org/2000/svg"
@@ -256,7 +255,6 @@
 													<path
 														d="M12.001 5.02894C13.1438 4.0066 14.6346 3.46057 16.1674 3.50297C17.7001 3.54537 19.1585 4.17298 20.243 5.25694C21.3264 6.34013 21.9543 7.79669 21.9982 9.32803C22.0421 10.8594 21.4986 12.3495 20.479 13.4929L11.999 21.9849L3.52102 13.4929C2.50028 12.3489 1.95623 10.8575 2.00056 9.32492C2.04489 7.79235 2.67425 6.33489 3.75942 5.25177C4.84459 4.16865 6.30323 3.54205 7.83589 3.50061C9.36854 3.45917 10.8589 4.00604 12.001 5.02894ZM18.827 6.66994C18.1044 5.94851 17.1332 5.53077 16.1124 5.50232C15.0917 5.47387 14.0987 5.83688 13.337 6.51694L12.002 7.71494L10.666 6.51794C9.90769 5.83983 8.91948 5.47614 7.90249 5.50086C6.88549 5.52559 5.91612 5.93688 5.19164 6.65104C4.46716 7.36519 4.04201 8.32856 4.0027 9.3451C3.96338 10.3616 4.31286 11.355 4.98002 12.1229L12 19.1539L19.02 12.1239C19.6844 11.3593 20.0339 10.3712 19.9981 9.35891C19.9623 8.34665 19.5438 7.38566 18.827 6.66994Z"
 														fill="#424242"
-														class="group-hover:fill-primary transition-colors"
 													/>
 												</svg>
 												Save
@@ -295,7 +293,9 @@
 									</div>
 								</div>
 
-								<div class="space-y-3 border-y border-[#DDD] py-5 md:py-10">
+								<div
+									class="space-y-3 border-y border-[#DDD] py-5 md:border-b-0 md:py-10"
+								>
 									<div class="space-y-5 md:space-y-6">
 										<p
 											class="text-sm tracking-[0.28px] text-[#414449] md:text-base md:tracking-[0.32px]"
@@ -481,6 +481,500 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</section>
+
+				<!-- Reviews -->
+				<section>
+					<div class="container overflow-hidden">
+						<!-- Divider -->
+						<hr class="my-5 h-px w-full border-none bg-[#DDD] lg:my-10" />
+						<!-- Slider main container -->
+						<div
+							class="swiper swiper-reviews overflow-visible! lg:overflow-hidden"
+						>
+							<!-- Additional required wrapper -->
+							<div
+								class="swiper-wrapper lg:grid! lg:grid-cols-2! lg:items-start lg:gap-10 xl:gap-x-[100px]"
+							>
+								<!-- Slides -->
+								<div
+									class="swiper-slide h-auto! border-r border-r-[#DDD] pr-5 lg:w-full! lg:border-0 lg:pr-0"
+								>
+									<div class="flex h-full flex-col gap-4 lg:flex-col-reverse">
+										<div class="space-y-4">
+											<div class="flex items-center gap-2">
+												<div class="flex items-center">
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+												</div>
+
+												<p
+													class="relative pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:font-semibold md:text-[#313131]"
+												>
+													4 days ago
+												</p>
+												<p
+													class="relative hidden pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:flex"
+												>
+													Stayed a few nights
+												</p>
+											</div>
+
+											<div class="md:space-y-4">
+												<div class="flex flex-col gap-3">
+													<p
+														class="text-xs leading-[0.24pxs] text-[#212121] md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+													<p
+														class="hidden-text hidden text-xs leading-[0.24pxs] text-[#212121] opacity-0 transition-opacity md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+												</div>
+
+												<button
+													class="show-more-btn hover:text-primary text-xs font-semibold tracking-[0.24px] text-[#222] underline underline-offset-4 md:text-sm"
+												>
+													Show more
+												</button>
+											</div>
+										</div>
+
+										<div class="flex items-center gap-3">
+											<div
+												class="size-10 overflow-hidden rounded-full md:size-11"
+											>
+												<img
+													src="./images/icons/review-avatar.svg"
+													alt="avatar"
+												/>
+											</div>
+											<div class="space-y-1">
+												<p
+													class="text-sm font-semibold tracking-[0.28px] text-[#232323] md:text-base"
+												>
+													John Doe
+												</p>
+												<p
+													class="text-[10px] tracking-[0.2px] text-[#5A5A5A] md:text-xs"
+												>
+													New York, New York
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Slides -->
+								<div
+									class="swiper-slide h-auto! border-r border-r-[#DDD] pr-5 lg:w-full! lg:border-0 lg:pr-0"
+								>
+									<div class="flex h-full flex-col gap-4 lg:flex-col-reverse">
+										<div class="space-y-4">
+											<div class="flex items-center gap-2">
+												<div class="flex items-center">
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+												</div>
+
+												<p
+													class="relative pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:font-semibold md:text-[#313131]"
+												>
+													4 days ago
+												</p>
+												<p
+													class="relative hidden pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:flex"
+												>
+													Stayed a few nights
+												</p>
+											</div>
+
+											<div class="md:space-y-4">
+												<div class="flex flex-col gap-3">
+													<p
+														class="text-xs leading-[0.24pxs] text-[#212121] md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+													<p
+														class="hidden-text hidden text-xs leading-[0.24pxs] text-[#212121] opacity-0 transition-opacity md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+												</div>
+
+												<button
+													class="show-more-btn hover:text-primary text-xs font-semibold tracking-[0.24px] text-[#222] underline underline-offset-4 md:text-sm"
+												>
+													Show more
+												</button>
+											</div>
+										</div>
+
+										<div class="flex items-center gap-3">
+											<div
+												class="size-10 overflow-hidden rounded-full md:size-11"
+											>
+												<img
+													src="./images/icons/review-avatar.svg"
+													alt="avatar"
+												/>
+											</div>
+											<div class="space-y-1">
+												<p
+													class="text-sm font-semibold tracking-[0.28px] text-[#232323] md:text-base"
+												>
+													John Doe
+												</p>
+												<p
+													class="text-[10px] tracking-[0.2px] text-[#5A5A5A] md:text-xs"
+												>
+													New York, New York
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Slides -->
+								<div
+									class="swiper-slide h-auto! border-r border-r-[#DDD] pr-5 lg:w-full! lg:border-0 lg:pr-0"
+								>
+									<div class="flex h-full flex-col gap-4 lg:flex-col-reverse">
+										<div class="space-y-4">
+											<div class="flex items-center gap-2">
+												<div class="flex items-center">
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+												</div>
+
+												<p
+													class="relative pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:font-semibold md:text-[#313131]"
+												>
+													4 days ago
+												</p>
+												<p
+													class="relative hidden pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:flex"
+												>
+													Stayed a few nights
+												</p>
+											</div>
+
+											<div class="md:space-y-4">
+												<div class="flex flex-col gap-3">
+													<p
+														class="text-xs leading-[0.24pxs] text-[#212121] md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+													<p
+														class="hidden-text hidden text-xs leading-[0.24pxs] text-[#212121] opacity-0 transition-opacity md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+												</div>
+
+												<button
+													class="show-more-btn hover:text-primary text-xs font-semibold tracking-[0.24px] text-[#222] underline underline-offset-4 md:text-sm"
+												>
+													Show more
+												</button>
+											</div>
+										</div>
+
+										<div class="flex items-center gap-3">
+											<div
+												class="size-10 overflow-hidden rounded-full md:size-11"
+											>
+												<img
+													src="./images/icons/review-avatar.svg"
+													alt="avatar"
+												/>
+											</div>
+											<div class="space-y-1">
+												<p
+													class="text-sm font-semibold tracking-[0.28px] text-[#232323] md:text-base"
+												>
+													John Doe
+												</p>
+												<p
+													class="text-[10px] tracking-[0.2px] text-[#5A5A5A] md:text-xs"
+												>
+													New York, New York
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Slides -->
+								<div
+									class="swiper-slide h-auto! border-r border-r-[#DDD] pr-5 lg:w-full! lg:border-0 lg:pr-0"
+								>
+									<div class="flex h-full flex-col gap-4 lg:flex-col-reverse">
+										<div class="space-y-4">
+											<div class="flex items-center gap-2">
+												<div class="flex items-center">
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+												</div>
+
+												<p
+													class="relative pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:font-semibold md:text-[#313131]"
+												>
+													4 days ago
+												</p>
+												<p
+													class="relative hidden pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:flex"
+												>
+													Stayed a few nights
+												</p>
+											</div>
+
+											<div class="md:space-y-4">
+												<div class="flex flex-col gap-3">
+													<p
+														class="text-xs leading-[0.24pxs] text-[#212121] md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+													<p
+														class="hidden-text hidden text-xs leading-[0.24pxs] text-[#212121] opacity-0 transition-opacity md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+												</div>
+
+												<button
+													class="show-more-btn hover:text-primary text-xs font-semibold tracking-[0.24px] text-[#222] underline underline-offset-4 md:text-sm"
+												>
+													Show more
+												</button>
+											</div>
+										</div>
+
+										<div class="flex items-center gap-3">
+											<div
+												class="size-10 overflow-hidden rounded-full md:size-11"
+											>
+												<img
+													src="./images/icons/review-avatar.svg"
+													alt="avatar"
+												/>
+											</div>
+											<div class="space-y-1">
+												<p
+													class="text-sm font-semibold tracking-[0.28px] text-[#232323] md:text-base"
+												>
+													John Doe
+												</p>
+												<p
+													class="text-[10px] tracking-[0.2px] text-[#5A5A5A] md:text-xs"
+												>
+													New York, New York
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Slides -->
+								<div
+									class="swiper-slide h-auto! border-r border-r-[#DDD] pr-5 lg:w-full! lg:border-0 lg:pr-0"
+								>
+									<div class="flex h-full flex-col gap-4 lg:flex-col-reverse">
+										<div class="space-y-4">
+											<div class="flex items-center gap-2">
+												<div class="flex items-center">
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+												</div>
+
+												<p
+													class="relative pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:font-semibold md:text-[#313131]"
+												>
+													4 days ago
+												</p>
+												<p
+													class="relative hidden pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:flex"
+												>
+													Stayed a few nights
+												</p>
+											</div>
+
+											<div class="md:space-y-4">
+												<div class="flex flex-col gap-3">
+													<p
+														class="text-xs leading-[0.24pxs] text-[#212121] md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+													<p
+														class="hidden-text hidden text-xs leading-[0.24pxs] text-[#212121] opacity-0 transition-opacity md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+												</div>
+
+												<button
+													class="show-more-btn hover:text-primary text-xs font-semibold tracking-[0.24px] text-[#222] underline underline-offset-4 md:text-sm"
+												>
+													Show more
+												</button>
+											</div>
+										</div>
+
+										<div class="flex items-center gap-3">
+											<div
+												class="size-10 overflow-hidden rounded-full md:size-11"
+											>
+												<img
+													src="./images/icons/review-avatar.svg"
+													alt="avatar"
+												/>
+											</div>
+											<div class="space-y-1">
+												<p
+													class="text-sm font-semibold tracking-[0.28px] text-[#232323] md:text-base"
+												>
+													John Doe
+												</p>
+												<p
+													class="text-[10px] tracking-[0.2px] text-[#5A5A5A] md:text-xs"
+												>
+													New York, New York
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- Slides -->
+								<div
+									class="swiper-slide h-auto! border-r border-r-[#DDD] pr-5 lg:w-full! lg:border-0 lg:pr-0"
+								>
+									<div class="flex h-full flex-col gap-4 lg:flex-col-reverse">
+										<div class="space-y-4">
+											<div class="flex items-center gap-2">
+												<div class="flex items-center">
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+													<img src="./images/icons/round-star.svg" alt="star" />
+												</div>
+
+												<p
+													class="relative pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:font-semibold md:text-[#313131]"
+												>
+													4 days ago
+												</p>
+												<p
+													class="relative hidden pl-3 text-sm tracking-[0.28px] text-[#808080] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#9C9C9C] md:flex"
+												>
+													Stayed a few nights
+												</p>
+											</div>
+
+											<div class="md:space-y-4">
+												<div class="flex flex-col gap-3">
+													<p
+														class="text-xs leading-[0.24pxs] text-[#212121] md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+													<p
+														class="hidden-text hidden text-xs leading-[0.24pxs] text-[#212121] opacity-0 transition-opacity md:text-sm"
+													>
+														The place was even better than the photos. Super
+														clean, stylish, and in a quiet neighborhood. The
+														host was very responsive and check-in was a breeze.
+														Definitely coming back next time I’m in town.
+													</p>
+												</div>
+
+												<button
+													class="show-more-btn hover:text-primary text-xs font-semibold tracking-[0.24px] text-[#222] underline underline-offset-4 md:text-sm"
+												>
+													Show more
+												</button>
+											</div>
+										</div>
+
+										<div class="flex items-center gap-3">
+											<div
+												class="size-10 overflow-hidden rounded-full md:size-11"
+											>
+												<img
+													src="./images/icons/review-avatar.svg"
+													alt="avatar"
+												/>
+											</div>
+											<div class="space-y-1">
+												<p
+													class="text-sm font-semibold tracking-[0.28px] text-[#232323] md:text-base"
+												>
+													John Doe
+												</p>
+												<p
+													class="text-[10px] tracking-[0.2px] text-[#5A5A5A] md:text-xs"
+												>
+													New York, New York
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Divider -->
+						<hr class="my-5 h-px w-full border-none bg-[#DDD] lg:my-10" />
 					</div>
 				</section>
 			</main>

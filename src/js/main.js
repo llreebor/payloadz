@@ -101,3 +101,44 @@ new Swiper(".swiper-category-3", {
 		},
 	},
 })
+new Swiper(".swiper-reviews", {
+	// Navigation arrows
+
+	spaceBetween: 20,
+
+	breakpoints: {
+		320: {
+			slidesPerView: 1.2,
+		},
+		480: {
+			slidesPerView: 1.4,
+		},
+		768: {
+			slidesPerView: 2.1,
+		},
+		1024: {
+			slidesPerView: 6,
+		},
+		fill: "row",
+		rows: 2,
+	},
+})
+
+// Show More Review
+function showMoreReviews() {
+	const buttons = document.querySelectorAll(".show-more-btn")
+	const content = document.querySelectorAll(".hidden-text")
+
+	buttons.forEach((btn, idx) => {
+		btn.addEventListener("click", () => {
+			if (content[idx].classList.contains("hidden")) {
+				content[idx].classList.remove("hidden", "opacity-0")
+				btn.textContent = "Show less"
+			} else {
+				content[idx].classList.add("hidden", "opacity-0")
+				btn.textContent = "Show more"
+			}
+		})
+	})
+}
+showMoreReviews()

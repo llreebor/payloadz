@@ -3,19 +3,17 @@
 /* Variables */
 @theme {
 	/* Container */
-	--container-width-in-figma: 1240px;
+	--container-max-width: 1288px;
 	--container-side-padding: 24px;
-	--container-max-width: calc(
-		var(--container-width-in-figma) + 2 * var(--container-side-padding)
-	);
 
 	/* Fonts */
 	--font-inter: "Inter", sans-serif;
 
 	/* Colors */
 	--color-purple-300: #ff385c;
-	--color-primary: #da0b66;
-	--color-primary-hovered: #c00757;
+	--color-primary: #0070bb;
+	--color-secondary: #3eb3f3;
+	--color-primary-hovered: #04558b;
 
 	/* Shadow */
 	--shadow-input: 0px 2px 16px 0px rgba(0, 0, 0, 0.12);
@@ -48,7 +46,6 @@
 		@apply cursor-pointer;
 	}
 }
-
 /* Custom Components */
 @layer components {
 	/* Button */
