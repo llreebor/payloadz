@@ -1,0 +1,1306 @@
+<!doctype html>
+<html lang="en" class="h-full">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Payloadz Products</title>
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/output.css" />
+
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- Libs -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+	</head>
+	<body class="relative h-full">
+		<div class="wrapper flex min-h-full flex-col">
+			<!-- Header  -->
+			<header class="border-b border-b-[#DDD] bg-white pt-[60px] pb-6 lg:py-12">
+				<div class="container">
+					<div
+						class="flex flex-col gap-10 lg:flex-row lg:items-center lg:justify-between"
+					>
+						<!-- Logo -->
+						<a href="#" class="hidden lg:block">
+							<img src="./images/global/logo.svg" alt="logo" />
+						</a>
+						<!-- Search Form -->
+						<form
+							action="#"
+							class="relative w-full lg:order-3 lg:max-w-[320px]"
+						>
+							<input type="text" class="input" placeholder="Search Here" />
+							<button type="submit" class="group absolute top-2 right-2">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="36"
+									height="36"
+									viewBox="0 0 36 36"
+									fill="none"
+								>
+									<rect
+										width="36"
+										height="36"
+										rx="18"
+										fill="#3eb3f3"
+										class="group-hover:fill-primary transition-colors"
+									/>
+									<path
+										d="M24.7556 26L19.1556 20.4C18.7111 20.7556 18.2 21.037 17.6222 21.2444C17.0444 21.4519 16.4296 21.5556 15.7778 21.5556C14.163 21.5556 12.7964 20.9961 11.6782 19.8773C10.56 18.7585 10.0006 17.392 10 15.7778C9.99941 14.1636 10.5588 12.797 11.6782 11.6782C12.7976 10.5594 14.1641 10 15.7778 10C17.3914 10 18.7582 10.5594 19.8782 11.6782C20.9982 12.797 21.5573 14.1636 21.5556 15.7778C21.5556 16.4296 21.4519 17.0444 21.2444 17.6222C21.037 18.2 20.7556 18.7111 20.4 19.1556L26 24.7556L24.7556 26ZM15.7778 19.7778C16.8889 19.7778 17.8335 19.389 18.6116 18.6116C19.3896 17.8341 19.7784 16.8895 19.7778 15.7778C19.7772 14.6661 19.3884 13.7218 18.6116 12.9449C17.8347 12.168 16.8901 11.779 15.7778 11.7778C14.6655 11.7766 13.7212 12.1656 12.9449 12.9449C12.1686 13.7241 11.7796 14.6684 11.7778 15.7778C11.776 16.8871 12.165 17.8317 12.9449 18.6116C13.7247 19.3914 14.669 19.7801 15.7778 19.7778Z"
+										fill="white"
+									/>
+								</svg>
+							</button>
+						</form>
+
+						<!-- Menu -->
+						<nav class="flex justify-center lg:order-2">
+							<ul class="flex items-center gap-4">
+								<li>
+									<a
+										href="#"
+										class="rounded-lg p-2 text-sm font-semibold tracking-[0.28px] text-[#333] transition-colors hover:bg-gray-100"
+									>
+										Sell Downloads
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="rounded-lg p-2 text-sm font-semibold tracking-[0.28px] text-[#333] transition-colors hover:bg-gray-100"
+									>
+										Order Search
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="rounded-lg p-2 text-sm font-semibold tracking-[0.28px] text-[#333] transition-colors hover:bg-gray-100"
+									>
+										Help
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<!-- Main Content -->
+			<main class="flex-auto">
+				<section class="overflow-hidden py-10">
+					<div class="container">
+						<div class="flex flex-col gap-10 md:flex-row">
+							<!-- Left Hav -->
+							<div
+								class="w-full overflow-hidden md:max-w-[320px] md:shrink-0 md:space-y-3"
+							>
+								<p
+									class="hidden text-xl font-medium tracking-[0.4px] text-[#47484B] md:block"
+								>
+									Categories
+								</p>
+								<ul
+									class="flex shrink-0 overflow-auto pb-5 md:flex-col md:overflow-visible [&_li]:shrink-0"
+								>
+									<li>
+										<button class="nav-link group">
+											<img
+												src="./images/icons/sidebar-icon-1.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Crafting
+											</p>
+										</button>
+									</li>
+									<li>
+										<button class="nav-link group active">
+											<img
+												src="./images/icons/sidebar-icon-2.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												eBooks
+											</p>
+										</button>
+
+										<ul class="hidden grid-cols-1 md:grid">
+											<li>
+												<a href="#" class="subnav-link">Arts and Crafts</a>
+											</li>
+											<li>
+												<a href="#" class="subnav-link">Biographies</a>
+											</li>
+											<li>
+												<a href="#" class="subnav-link">Health</a>
+											</li>
+											<li>
+												<a href="#" class="subnav-link">History</a>
+											</li>
+											<li>
+												<a href="#" class="subnav-link">Home and Garden</a>
+											</li>
+											<li>
+												<a href="#" class="subnav-link">Travel</a>
+											</li>
+											<li>
+												<a href="#" class="subnav-link">Outdoors and Nature</a>
+											</li>
+											<li>
+												<a href="#" class="subnav-link">Computers</a>
+											</li>
+											<li>
+												<a href="#" class="subnav-link">Internet</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<button class="nav-link group">
+											<img
+												src="./images/icons/sidebar-icon-3.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Documents and forms
+											</p>
+										</button>
+									</li>
+									<li>
+										<button class="nav-link group">
+											<img
+												src="./images/icons/sidebar-icon-4.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Software
+											</p>
+										</button>
+									</li>
+									<li>
+										<button class="nav-link group">
+											<img
+												src="./images/icons/sidebar-icon-5.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Video
+											</p>
+										</button>
+									</li>
+									<li>
+										<button class="nav-link group">
+											<img
+												src="./images/icons/sidebar-icon-6.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Audio files
+											</p>
+										</button>
+									</li>
+									<li>
+										<button class="nav-link group">
+											<img
+												src="./images/icons/sidebar-icon-7.svg"
+												alt="nav icon"
+											/>
+											<p class="leading-[0.32px] font-medium text-[#252526]">
+												Other files
+											</p>
+										</button>
+									</li>
+								</ul>
+
+								<!-- Moblie Submenu -->
+								<ul class="grid grid-cols-2 md:hidden">
+									<li>
+										<a href="#" class="subnav-link">Arts and Crafts</a>
+									</li>
+									<li>
+										<a href="#" class="subnav-link">Biographies</a>
+									</li>
+									<li>
+										<a href="#" class="subnav-link">Health</a>
+									</li>
+									<li>
+										<a href="#" class="subnav-link">History</a>
+									</li>
+									<li>
+										<a href="#" class="subnav-link">Home and Garden</a>
+									</li>
+									<li>
+										<a href="#" class="subnav-link">Travel</a>
+									</li>
+									<li>
+										<a href="#" class="subnav-link">Outdoors and Nature</a>
+									</li>
+									<li>
+										<a href="#" class="subnav-link">Computers</a>
+									</li>
+									<li>
+										<a href="#" class="subnav-link">Internet</a>
+									</li>
+								</ul>
+
+								<a
+									href="#"
+									class="mt-5 flex items-center justify-center gap-2 rounded bg-[#E6E6E6] p-3 text-sm font-semibold tracking-[0.28px] text-[#393939] transition-colors hover:bg-[#E1E1E1] md:mt-0"
+								>
+									<img
+										src="./images/icons/money-exchange.svg"
+										alt="money icon"
+									/>
+									Share and Earn
+								</a>
+							</div>
+							<!-- Right Content -->
+							<div class="flex w-full flex-col gap-4 overflow-hidden">
+								<div class="space-y-1">
+									<p
+										class="text-xl font-medium tracking-[0.4px] text-[#1E1E1E]"
+									>
+										eBooks
+									</p>
+									<p
+										class="text-sm font-medium tracking-[0.28px] text-[#919AA3]"
+									>
+										8639 Products Found
+									</p>
+								</div>
+
+								<div
+									class="flex items-center gap-6 overflow-auto border-b border-b-[#DDD] pb-3 md:pb-5"
+								>
+									<p class="shrink-0 text-sm tracking-[0.28px] text-[#969B9F]">
+										Sort by:
+									</p>
+									<ul class="flex shrink-0 items-center gap-3">
+										<li>
+											<button class="filter-button active">Best Selling</button>
+										</li>
+										<li><button class="filter-button">Newest</button></li>
+										<li>
+											<button class="filter-button">Highest Price</button>
+										</li>
+										<li><button class="filter-button">Lowest Price</button></li>
+										<li>
+											<button class="filter-button">Free Downloads</button>
+										</li>
+									</ul>
+								</div>
+
+								<div
+									class="grid grid-cols-2 gap-3 lg:grid-cols-3 xl:grid-cols-4"
+								>
+									<a href="#" class="swiper-slide group">
+										<div>
+											<!-- Image & Badges -->
+											<div
+												class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+											>
+												<img
+													class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+													src="./images/global/slide-image.png"
+													alt="slide image"
+												/>
+												<div class="flex items-center justify-between gap-3">
+													<p
+														class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+													>
+														Guest favorite
+													</p>
+
+													<div
+														class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+													>
+														<img
+															src="./images/icons/money-exchange-white.svg"
+															alt="icon"
+														/>
+													</div>
+												</div>
+											</div>
+
+											<!-- Info -->
+											<div class="mt-2 space-y-1">
+												<p class="text-sm font-semibold tracking-[0.28px]">
+													Product name
+												</p>
+
+												<ul class="flex items-center gap-2.5">
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<p>$140</p>
+													</li>
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<img
+															src="./images/icons/star.svg"
+															alt="star icon"
+														/>
+														<p>4.94</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div>
+											<!-- Image & Badges -->
+											<div
+												class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+											>
+												<img
+													class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+													src="./images/global/slide-image.png"
+													alt="slide image"
+												/>
+												<div class="flex items-center justify-between gap-3">
+													<p
+														class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+													>
+														Guest favorite
+													</p>
+
+													<div
+														class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+													>
+														<img
+															src="./images/icons/money-exchange-white.svg"
+															alt="icon"
+														/>
+													</div>
+												</div>
+											</div>
+
+											<!-- Info -->
+											<div class="mt-2 space-y-1">
+												<p class="text-sm font-semibold tracking-[0.28px]">
+													Product name
+												</p>
+
+												<ul class="flex items-center gap-2.5">
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<p>$140</p>
+													</li>
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<img
+															src="./images/icons/star.svg"
+															alt="star icon"
+														/>
+														<p>4.94</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div>
+											<!-- Image & Badges -->
+											<div
+												class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+											>
+												<img
+													class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+													src="./images/global/slide-image.png"
+													alt="slide image"
+												/>
+												<div class="flex items-center justify-between gap-3">
+													<p
+														class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+													>
+														Guest favorite
+													</p>
+
+													<div
+														class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+													>
+														<img
+															src="./images/icons/money-exchange-white.svg"
+															alt="icon"
+														/>
+													</div>
+												</div>
+											</div>
+
+											<!-- Info -->
+											<div class="mt-2 space-y-1">
+												<p class="text-sm font-semibold tracking-[0.28px]">
+													Product name
+												</p>
+
+												<ul class="flex items-center gap-2.5">
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<p>$140</p>
+													</li>
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<img
+															src="./images/icons/star.svg"
+															alt="star icon"
+														/>
+														<p>4.94</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div>
+											<!-- Image & Badges -->
+											<div
+												class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+											>
+												<img
+													class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+													src="./images/global/slide-image.png"
+													alt="slide image"
+												/>
+												<div class="flex items-center justify-between gap-3">
+													<p
+														class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+													>
+														Guest favorite
+													</p>
+
+													<div
+														class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+													>
+														<img
+															src="./images/icons/money-exchange-white.svg"
+															alt="icon"
+														/>
+													</div>
+												</div>
+											</div>
+
+											<!-- Info -->
+											<div class="mt-2 space-y-1">
+												<p class="text-sm font-semibold tracking-[0.28px]">
+													Product name
+												</p>
+
+												<ul class="flex items-center gap-2.5">
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<p>$140</p>
+													</li>
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<img
+															src="./images/icons/star.svg"
+															alt="star icon"
+														/>
+														<p>4.94</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div>
+											<!-- Image & Badges -->
+											<div
+												class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+											>
+												<img
+													class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+													src="./images/global/slide-image.png"
+													alt="slide image"
+												/>
+												<div class="flex items-center justify-between gap-3">
+													<p
+														class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+													>
+														Guest favorite
+													</p>
+
+													<div
+														class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+													>
+														<img
+															src="./images/icons/money-exchange-white.svg"
+															alt="icon"
+														/>
+													</div>
+												</div>
+											</div>
+
+											<!-- Info -->
+											<div class="mt-2 space-y-1">
+												<p class="text-sm font-semibold tracking-[0.28px]">
+													Product name
+												</p>
+
+												<ul class="flex items-center gap-2.5">
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<p>$140</p>
+													</li>
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<img
+															src="./images/icons/star.svg"
+															alt="star icon"
+														/>
+														<p>4.94</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div>
+											<!-- Image & Badges -->
+											<div
+												class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+											>
+												<img
+													class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+													src="./images/global/slide-image.png"
+													alt="slide image"
+												/>
+												<div class="flex items-center justify-between gap-3">
+													<p
+														class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+													>
+														Guest favorite
+													</p>
+
+													<div
+														class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+													>
+														<img
+															src="./images/icons/money-exchange-white.svg"
+															alt="icon"
+														/>
+													</div>
+												</div>
+											</div>
+
+											<!-- Info -->
+											<div class="mt-2 space-y-1">
+												<p class="text-sm font-semibold tracking-[0.28px]">
+													Product name
+												</p>
+
+												<ul class="flex items-center gap-2.5">
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<p>$140</p>
+													</li>
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<img
+															src="./images/icons/star.svg"
+															alt="star icon"
+														/>
+														<p>4.94</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div>
+											<!-- Image & Badges -->
+											<div
+												class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+											>
+												<img
+													class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+													src="./images/global/slide-image.png"
+													alt="slide image"
+												/>
+												<div class="flex items-center justify-between gap-3">
+													<p
+														class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+													>
+														Guest favorite
+													</p>
+
+													<div
+														class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+													>
+														<img
+															src="./images/icons/money-exchange-white.svg"
+															alt="icon"
+														/>
+													</div>
+												</div>
+											</div>
+
+											<!-- Info -->
+											<div class="mt-2 space-y-1">
+												<p class="text-sm font-semibold tracking-[0.28px]">
+													Product name
+												</p>
+
+												<ul class="flex items-center gap-2.5">
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<p>$140</p>
+													</li>
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<img
+															src="./images/icons/star.svg"
+															alt="star icon"
+														/>
+														<p>4.94</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</a>
+
+									<a href="#" class="swiper-slide group">
+										<div>
+											<!-- Image & Badges -->
+											<div
+												class="relative z-0 min-h-[166px] overflow-hidden rounded-2xl p-3 md:min-h-[211px]"
+											>
+												<img
+													class="absolute top-0 left-0 -z-10 h-full w-full object-cover transition-transform group-hover:scale-110"
+													src="./images/global/slide-image.png"
+													alt="slide image"
+												/>
+												<div class="flex items-center justify-between gap-3">
+													<p
+														class="shadow-slide-badge rounded-3xl bg-[#EFEDEE] px-2 py-1 text-sm font-semibold tracking-[0.24px] text-[#1B1B1B]"
+													>
+														Guest favorite
+													</p>
+
+													<div
+														class="flex items-center justify-center rounded bg-black/40 p-[2px]"
+													>
+														<img
+															src="./images/icons/money-exchange-white.svg"
+															alt="icon"
+														/>
+													</div>
+												</div>
+											</div>
+
+											<!-- Info -->
+											<div class="mt-2 space-y-1">
+												<p class="text-sm font-semibold tracking-[0.28px]">
+													Product name
+												</p>
+
+												<ul class="flex items-center gap-2.5">
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<p>$140</p>
+													</li>
+													<li
+														class="relative flex items-center gap-[2px] text-sm tracking-[0.24px] text-[#606060] after:absolute after:top-1/2 after:right-[-5px] after:size-[2px] after:-translate-y-1/2 after:rounded-full after:bg-[#606060] last:after:hidden"
+													>
+														<img
+															src="./images/icons/star.svg"
+															alt="star icon"
+														/>
+														<p>4.94</p>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+
+			<!-- Mobile Navigation -->
+			<nav
+				class="fixed bottom-0 left-0 z-10 flex w-full justify-center border-t border-t-[#DDD] bg-white p-2 lg:hidden"
+			>
+				<ul class="flex items-center gap-10">
+					<li>
+						<a href="#" class="group active flex flex-col items-center">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+							>
+								<path
+									class="group-[.active]:fill-[#D8184B]"
+									d="M19.6 21.5801L13.3 15.2801C12.8 15.6801 12.225 15.9967 11.575 16.2301C10.925 16.4634 10.2333 16.5801 9.5 16.5801C7.68333 16.5801 6.146 15.9507 4.888 14.6921C3.63 13.4334 3.00067 11.8961 3 10.0801C2.99933 8.26408 3.62867 6.72674 4.888 5.46808C6.14733 4.20941 7.68467 3.58008 9.5 3.58008C11.3153 3.58008 12.853 4.20941 14.113 5.46808C15.373 6.72674 16.002 8.26408 16 10.0801C16 10.8134 15.8833 11.5051 15.65 12.1551C15.4167 12.8051 15.1 13.3801 14.7 13.8801L21 20.1801L19.6 21.5801ZM9.5 14.5801C10.75 14.5801 11.8127 14.1427 12.688 13.2681C13.5633 12.3934 14.0007 11.3307 14 10.0801C13.9993 8.82941 13.562 7.76708 12.688 6.89308C11.814 6.01908 10.7513 5.58141 9.5 5.58008C8.24867 5.57874 7.18633 6.01641 6.313 6.89308C5.43967 7.76974 5.002 8.83208 5 10.0801C4.998 11.3281 5.43567 12.3907 6.313 13.2681C7.19033 14.1454 8.25267 14.5827 9.5 14.5801Z"
+									fill="#666"
+								/>
+							</svg>
+
+							<p
+								class="text-xs font-medium tracking-[0.24px] text-[#666] group-[.active]:text-[#D8184B]"
+							>
+								Explore
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="group flex flex-col items-center">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+							>
+								<path
+									class="group-[.active]:stroke-[#D8184B]"
+									d="M7.75 4.08008C5.127 4.08008 3 6.34008 3 9.12708C3 14.7051 12 21.0801 12 21.0801C12 21.0801 21 14.7051 21 9.12708C21 5.67408 18.873 4.08008 16.25 4.08008C14.39 4.08008 12.78 5.21608 12 6.87008C11.22 5.21608 9.61 4.08008 7.75 4.08008Z"
+									stroke="#666666"
+									stroke-width="1.5"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								/>
+							</svg>
+
+							<p
+								class="text-xs font-medium tracking-[0.24px] text-[#666] group-[.active]:text-[#D8184B]"
+							>
+								Wishlists
+							</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="group flex flex-col items-center">
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="25"
+								viewBox="0 0 24 25"
+								fill="none"
+							>
+								<path
+									class="group-[.active]:fill-[#D8184B]"
+									d="M12 2.83008C10.0716 2.83008 8.18657 3.40191 6.58319 4.47325C4.97982 5.54459 3.73013 7.06733 2.99218 8.84891C2.25422 10.6305 2.06114 12.5909 2.43735 14.4822C2.81355 16.3735 3.74215 18.1108 5.10571 19.4744C6.46928 20.8379 8.20656 21.7665 10.0979 22.1427C11.9892 22.5189 13.9496 22.3259 15.7312 21.5879C17.5127 20.8499 19.0355 19.6003 20.1068 17.9969C21.1782 16.3935 21.75 14.5084 21.75 12.5801C21.7473 9.99506 20.7192 7.51669 18.8913 5.6888C17.0634 3.86091 14.585 2.83281 12 2.83008ZM6.945 19.0957C7.48757 18.2472 8.23501 17.5488 9.11843 17.0651C10.0019 16.5814 10.9928 16.3279 12 16.3279C13.0072 16.3279 13.9982 16.5814 14.8816 17.0651C15.765 17.5488 16.5124 18.2472 17.055 19.0957C15.6097 20.2198 13.831 20.83 12 20.83C10.169 20.83 8.39032 20.2198 6.945 19.0957ZM9 11.8301C9 11.2367 9.17595 10.6567 9.5056 10.1634C9.83524 9.67002 10.3038 9.2855 10.852 9.05844C11.4001 8.83138 12.0033 8.77197 12.5853 8.88772C13.1672 9.00348 13.7018 9.2892 14.1213 9.70876C14.5409 10.1283 14.8266 10.6629 14.9424 11.2448C15.0581 11.8267 14.9987 12.4299 14.7716 12.9781C14.5446 13.5263 14.1601 13.9948 13.6667 14.3245C13.1734 14.6541 12.5933 14.8301 12 14.8301C11.2044 14.8301 10.4413 14.514 9.87868 13.9514C9.31607 13.3888 9 12.6257 9 11.8301ZM18.165 18.056C17.3285 16.8439 16.1524 15.9062 14.7844 15.3607C15.5192 14.7819 16.0554 13.9886 16.3184 13.0909C16.5815 12.1933 16.5582 11.236 16.252 10.3522C15.9457 9.46833 15.3716 8.70191 14.6096 8.15948C13.8475 7.61704 12.9354 7.32556 12 7.32556C11.0646 7.32556 10.1525 7.61704 9.39044 8.15948C8.62839 8.70191 8.05432 9.46833 7.74805 10.3522C7.44179 11.236 7.41855 12.1933 7.68157 13.0909C7.94459 13.9886 8.4808 14.7819 9.21563 15.3607C7.84765 15.9062 6.67147 16.8439 5.835 18.056C4.77804 16.8674 4.0872 15.3986 3.84567 13.8265C3.60415 12.2544 3.82224 10.6459 4.47368 9.19486C5.12512 7.7438 6.18213 6.51199 7.51745 5.64777C8.85276 4.78354 10.4094 4.32375 12 4.32375C13.5906 4.32375 15.1473 4.78354 16.4826 5.64777C17.8179 6.51199 18.8749 7.7438 19.5263 9.19486C20.1778 10.6459 20.3959 12.2544 20.1543 13.8265C19.9128 15.3986 19.222 16.8674 18.165 18.056Z"
+									fill="#666666"
+								/>
+							</svg>
+
+							<p
+								class="text-xs font-medium tracking-[0.24px] text-[#666] group-[.active]:text-[#D8184B]"
+							>
+								Log in
+							</p>
+						</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- Footer -->
+			<footer class="bg-[#F8F8F8] py-10 pb-[98px] lg:py-10">
+				<div class="container">
+					<!-- Menus -->
+					<div class="flex flex-col md:flex-row md:justify-between md:gap-5">
+						<div
+							class="border-b border-b-[#DDD] py-5 first:pt-0 md:border-0 md:pt-0 md:pb-10"
+						>
+							<p
+								class="text-sm font-semibold tracking-[0.28px] text-[#1F1F1F] md:text-base"
+							>
+								Support
+							</p>
+
+							<ul class="mt-4 space-y-4">
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Help Center
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Air Cover
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Anti-discrimination
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Disability support
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Cancellation options
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Report neighborhood concern
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div
+							class="border-b border-b-[#DDD] py-5 first:pt-0 md:border-0 md:pt-0 md:pb-10"
+						>
+							<p
+								class="text-sm font-semibold tracking-[0.28px] text-[#1F1F1F] md:text-base"
+							>
+								Hosting
+							</p>
+
+							<ul class="mt-4 space-y-4">
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Payloadz at your home
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Payloadz your experience
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Payloadz your service
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										AirCover for hosts
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Hosting resources
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Community forum
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Hosting responsibly
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Payloadz-friendly apartments
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Join a free Hosting class
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Find a co-host
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div
+							class="border-b border-b-[#DDD] py-5 first:pt-0 md:border-0 md:pt-0 md:pb-10"
+						>
+							<p
+								class="text-sm font-semibold tracking-[0.28px] text-[#1F1F1F] md:text-base"
+							>
+								Payloadz
+							</p>
+
+							<ul class="mt-4 space-y-4">
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										2025 Summer Release
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Newsroom
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Careers
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Investors
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Gift Cards
+									</a>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="hover:text-primary text-sm tracking-[0.28px] text-[#242424] md:text-base"
+									>
+										Payloadz.org emergency stays
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Lang & Social & Copy -->
+					<div
+						class="flex flex-col gap-5 pt-5 lg:flex-row-reverse lg:justify-between lg:border-t lg:border-t-[#DDD] lg:pt-10"
+					>
+						<div class="flex flex-col gap-3.5 md:flex-row">
+							<!-- Selects -->
+							<div class="flex items-center gap-5">
+								<!-- Lang Select -->
+								<div class="flex items-center gap-2">
+									<img src="./images/icons/lang.svg" alt="image" />
+									<div class="relative">
+										<button id="select-lang" class="flex w-full cursor-pointer">
+											<span
+												id="selected-option-lang"
+												class="selected-option font-medium text-[#373737]"
+											>
+												English (US)
+											</span>
+										</button>
+										<div
+											id="options-lang"
+											class="absolute bottom-full left-0 z-10 mb-1 hidden min-w-[160px] transform overflow-auto rounded-md border border-gray-200 bg-white transition-all duration-300 ease-in-out"
+										>
+											<ul class="grid">
+												<li>
+													<button
+														class="option w-full shrink-0 p-2 text-left text-sm font-semibold text-[#373737] hover:bg-gray-100"
+													>
+														English (US)
+													</button>
+												</li>
+												<li>
+													<button
+														class="option w-full shrink-0 p-2 text-left text-sm font-semibold text-[#373737] hover:bg-gray-100"
+													>
+														Spanish (ESP)
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+
+								<!-- Currency Select -->
+								<div class="flex items-center gap-2">
+									<img src="./images/icons/usd.svg" alt="image" />
+									<div class="relative">
+										<button
+											id="select-currency"
+											class="flex w-full cursor-pointer"
+										>
+											<span
+												id="selected-option-currency"
+												class="selected-option font-medium text-[#373737]"
+											>
+												USD
+											</span>
+										</button>
+										<div
+											id="options-currency"
+											class="absolute bottom-full left-0 z-10 mb-1 hidden min-w-[160px] transform overflow-auto rounded-md border border-gray-200 bg-white transition-all duration-300 ease-in-out"
+										>
+											<ul class="grid">
+												<li>
+													<button
+														class="option w-full shrink-0 p-2 text-left text-sm font-semibold text-[#373737] hover:bg-gray-100"
+													>
+														USD
+													</button>
+												</li>
+												<li>
+													<button
+														class="option w-full shrink-0 p-2 text-left text-sm font-semibold text-[#373737] hover:bg-gray-100"
+													>
+														EUR
+													</button>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Social -->
+							<ul class="flex gap-5">
+								<li>
+									<a href="#" class="group">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="21"
+											viewBox="0 0 20 21"
+											fill="none"
+										>
+											<path
+												d="M18.3337 10.5802C18.3337 5.98016 14.6003 2.24683 10.0003 2.24683C5.40033 2.24683 1.66699 5.98016 1.66699 10.5802C1.66699 14.6135 4.53366 17.9718 8.33366 18.7468V13.0802H6.66699V10.5802H8.33366V8.49683C8.33366 6.88849 9.64199 5.58016 11.2503 5.58016H13.3337V8.08016H11.667C11.2087 8.08016 10.8337 8.45516 10.8337 8.91349V10.5802H13.3337V13.0802H10.8337V18.8718C15.042 18.4552 18.3337 14.9052 18.3337 10.5802Z"
+												fill="#373737"
+												class="group-hover:fill-primary transition-colors"
+											/>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="group">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="21"
+											viewBox="0 0 20 21"
+											fill="none"
+										>
+											<g clip-path="url(#clip0_106_1108)">
+												<mask
+													id="mask0_106_1108"
+													style="mask-type: luminance"
+													maskUnits="userSpaceOnUse"
+													x="0"
+													y="0"
+													width="20"
+													height="21"
+												>
+													<path
+														d="M0 0.580078H20V20.5801H0V0.580078Z"
+														fill="white"
+													/>
+												</mask>
+												<g mask="url(#mask0_106_1108)">
+													<path
+														d="M15.75 1.51733H18.8171L12.1171 9.19448L20 19.643H13.8286L8.99143 13.3073L3.46286 19.643H0.392857L7.55857 11.4288L0 1.51876H6.32857L10.6943 7.30876L15.75 1.51733ZM14.6714 17.803H16.3714L5.4 3.26162H3.57714L14.6714 17.803Z"
+														fill="#373737"
+														class="group-hover:fill-primary transition-colors"
+													/>
+												</g>
+											</g>
+											<defs>
+												<clipPath id="clip0_106_1108">
+													<rect
+														width="20"
+														height="20"
+														fill="white"
+														transform="translate(0 0.580078)"
+													/>
+												</clipPath>
+											</defs>
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="group">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="20"
+											height="21"
+											viewBox="0 0 20 21"
+											fill="none"
+										>
+											<path
+												d="M6.50033 2.24683H13.5003C16.167 2.24683 18.3337 4.41349 18.3337 7.08016V14.0802C18.3337 15.362 17.8244 16.5914 16.918 17.4978C16.0116 18.4043 14.7822 18.9135 13.5003 18.9135H6.50033C3.83366 18.9135 1.66699 16.7468 1.66699 14.0802V7.08016C1.66699 5.79828 2.17622 4.5689 3.08264 3.66248C3.98907 2.75605 5.21845 2.24683 6.50033 2.24683ZM6.33366 3.91349C5.53801 3.91349 4.77495 4.22956 4.21234 4.79217C3.64973 5.35478 3.33366 6.11784 3.33366 6.91349V14.2468C3.33366 15.9052 4.67533 17.2468 6.33366 17.2468H13.667C14.4626 17.2468 15.2257 16.9308 15.7883 16.3681C16.3509 15.8055 16.667 15.0425 16.667 14.2468V6.91349C16.667 5.25516 15.3253 3.91349 13.667 3.91349H6.33366ZM14.3753 5.16349C14.6516 5.16349 14.9165 5.27324 15.1119 5.46859C15.3072 5.66394 15.417 5.92889 15.417 6.20516C15.417 6.48143 15.3072 6.74638 15.1119 6.94173C14.9165 7.13708 14.6516 7.24683 14.3753 7.24683C14.0991 7.24683 13.8341 7.13708 13.6388 6.94173C13.4434 6.74638 13.3337 6.48143 13.3337 6.20516C13.3337 5.92889 13.4434 5.66394 13.6388 5.46859C13.8341 5.27324 14.0991 5.16349 14.3753 5.16349ZM10.0003 6.41349C11.1054 6.41349 12.1652 6.85248 12.9466 7.63388C13.728 8.41528 14.167 9.47509 14.167 10.5802C14.167 11.6852 13.728 12.745 12.9466 13.5264C12.1652 14.3078 11.1054 14.7468 10.0003 14.7468C8.89526 14.7468 7.83545 14.3078 7.05405 13.5264C6.27265 12.745 5.83366 11.6852 5.83366 10.5802C5.83366 9.47509 6.27265 8.41528 7.05405 7.63388C7.83545 6.85248 8.89526 6.41349 10.0003 6.41349ZM10.0003 8.08016C9.33728 8.08016 8.7014 8.34355 8.23256 8.81239C7.76372 9.28123 7.50033 9.91712 7.50033 10.5802C7.50033 11.2432 7.76372 11.8791 8.23256 12.3479C8.7014 12.8168 9.33728 13.0802 10.0003 13.0802C10.6634 13.0802 11.2993 12.8168 11.7681 12.3479C12.2369 11.8791 12.5003 11.2432 12.5003 10.5802C12.5003 9.91712 12.2369 9.28123 11.7681 8.81239C11.2993 8.34355 10.6634 8.08016 10.0003 8.08016Z"
+												fill="#373737"
+												class="group-hover:fill-primary transition-colors"
+											/>
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<div class="flex flex-col gap-1 md:flex-row">
+							<p
+								class="text-[10px] tracking-[0.2px] text-[#373737] md:text-base lg:hidden"
+							>
+								©
+								<span class="md:hidden">2025</span>
+								Payloadz
+								<span class="md:hidden">, Inc</span>
+							</p>
+
+							<ul class="flex items-center gap-2 min-[420px]:gap-4">
+								<li class="hidden leading-0 md:block">
+									<a
+										href="#"
+										class="hover:text-primary block text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors md:text-base"
+									>
+										©
+										<span class="md:hidden">2025</span>
+										Payloadz
+										<span class="md:hidden">, Inc</span>
+									</a>
+								</li>
+								<li class="hidden md:block">
+									<div
+										class="mt-[2px] block size-1 rounded-full bg-[#373737]"
+									></div>
+								</li>
+								<li class="leading-0">
+									<a
+										href="#"
+										class="hover:text-primary block text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors md:text-base"
+									>
+										Terms
+									</a>
+								</li>
+								<li>
+									<div
+										class="mt-[2px] block size-1 rounded-full bg-[#373737]"
+									></div>
+								</li>
+								<li class="leading-0">
+									<a
+										href="#"
+										class="hover:text-primary block text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors md:text-base"
+									>
+										Sitemap
+									</a>
+								</li>
+								<li>
+									<div
+										class="mt-[2px] block size-1 rounded-full bg-[#373737]"
+									></div>
+								</li>
+								<li class="leading-0">
+									<a
+										href="#"
+										class="hover:text-primary block text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors md:text-base"
+									>
+										Privacy
+									</a>
+								</li>
+								<li>
+									<div
+										class="mt-[2px] block size-1 rounded-full bg-[#373737]"
+									></div>
+								</li>
+								<li class="flex items-center gap-[18px] leading-0">
+									<a
+										href="#"
+										class="hover:text-primary block shrink-0 text-[10px] leading-0 tracking-[0.2px] text-[#373737] transition-colors md:text-base"
+									>
+										Your privacy choices
+									</a>
+									<img
+										class="hidden min-[375px]:block"
+										src="./images/icons/choice.svg"
+										alt="choice icon"
+									/>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!-- Libs -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<!-- Custom JS -->
+		<script src="./js/main.js"></script>
+	</body>
+</html>

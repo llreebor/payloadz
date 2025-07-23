@@ -56,6 +56,18 @@
 	.input {
 		@apply shadow-input focus:outline-primary flex w-full rounded-full border border-[#DDD] px-4 py-[15px] pr-12 text-sm tracking-[0.28px] placeholder:text-[#A9AFAD];
 	}
+	/* Nav Link */
+	.nav-link {
+		@apply flex w-full shrink-0 items-center gap-3 rounded-xl p-4 transition-colors md:rounded-[20px] md:p-5 md:hover:bg-[#F3F3F3];
+	}
+	/* Subnav Link */
+	.subnav-link {
+		@apply flex rounded-lg px-4 py-3 text-sm font-medium tracking-[0.28px] text-[#212121] hover:bg-gray-100 md:px-14;
+	}
+	/* Filter Button */
+	.filter-button {
+		@apply flex w-full shrink-0 items-center justify-center gap-2 rounded-lg px-3 py-2 text-sm font-medium tracking-[0.28px] text-[#505052] transition-colors hover:bg-[#F3F3F3];
+	}
 }
 
 /* Utility Classes */
@@ -63,6 +75,14 @@
 	/* Mobile Menu */
 	.mobile-menu.is-open {
 		@apply visible opacity-100;
+	}
+	/* Nav Link */
+	.nav-link.active {
+		@apply bg-[#F3F3F3];
+	}
+	/* Filter Button */
+	.filter-button.active {
+		@apply bg-[#E6E6E6] text-[#393939];
 	}
 }
 .swiper-button-disabled {
