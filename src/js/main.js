@@ -149,7 +149,44 @@ new Swiper(".swiper-similar", {
 		},
 	},
 })
+const thumbs = new Swiper(".swiper-selected-home-thumbnails", {
+	// Optional parameters
+	loop: false,
+	breakpoints: {
+		1024: {
+			slidesPerView: 5.1,
+		},
+		1280: {
+			slidesPerView: 7.1,
+		},
+	},
+	navigation: {
+		nextEl: ".thumb-next",
+		prevEl: ".thumb-prev",
+	},
+})
 
+new Swiper(".swiper-selected-home", {
+	spaceBetween: 12,
+	slidesPerView: 1,
+	loop: false,
+	on: {
+		init: function () {
+			document.querySelector(".total").textContent = this.slides.length
+			document.querySelector(".current").textContent = this.realIndex + 1
+		},
+		slideChange: function () {
+			document.querySelector(".current").textContent = this.realIndex + 1
+		},
+	},
+	thumbs: {
+		swiper: thumbs,
+	},
+	navigation: {
+		nextEl: ".thumb-next",
+		prevEl: ".thumb-prev",
+	},
+})
 // Show More Review
 function showMoreReviews() {
 	const buttons = document.querySelectorAll(".show-more-btn")

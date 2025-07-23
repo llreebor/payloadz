@@ -92,3 +92,7 @@
 		opacity: 0.2;
 	}
 }
+.thumb-next.swiper-button-disabled,
+.thumb-prev.swiper-button-disabled {
+	background: #b3b3b3;
+}

@@ -188,37 +188,281 @@
 				<section>
 					<div class="container">
 						<div
-							class="relative flex flex-col md:flex-row md:items-start md:gap-5 lg:gap-10"
+							class="relative flex flex-col justify-between md:items-start md:gap-5 lg:flex-row lg:gap-10"
 						>
 							<!-- Left Side -->
-							<div class="w-full">
-								<div class="flex flex-col md:flex-col-reverse">
-									<!-- Slider -->
-									<div
-										class="bg-primary flex h-[400px] items-center justify-center text-3xl text-white"
-									>
-										SLIDER
+							<!--  flex-1 shrink-0 md:max-w-[420px] lg:max-w-[560px] xl:max-w-[800px] -->
+							<div
+								class="w-full flex-1 shrink-0 lg:max-w-[560px] xl:max-w-[800px]"
+							>
+								<div class="flex w-full flex-col lg:flex-col-reverse">
+									<div class="relative z-0 -mx-6 lg:mx-0">
+										<!-- Slider main container -->
+										<div class="swiper swiper-selected-home z-0">
+											<!-- Additional required wrapper -->
+											<div class="swiper-wrapper z-0">
+												<!-- Slides -->
+												<div
+													class="swiper-slide aspect-square h-auto! lg:aspect-video lg:max-h-[440px] lg:overflow-hidden lg:rounded-2xl"
+												>
+													<img
+														class="h-full w-full max-w-full object-cover"
+														src="./images/selected-home/slide-1.jpg"
+														alt="slide image"
+													/>
+												</div>
+												<div
+													class="swiper-slide aspect-square h-auto! lg:aspect-video lg:max-h-[440px] lg:overflow-hidden lg:rounded-2xl"
+												>
+													<img
+														class="h-full w-full max-w-full object-cover"
+														src="./images/selected-home/slide-2.png"
+														alt="slide image"
+													/>
+												</div>
+												<div
+													class="swiper-slide aspect-square h-auto! lg:aspect-video lg:max-h-[440px] lg:overflow-hidden lg:rounded-2xl"
+												>
+													<img
+														class="h-full w-full max-w-full object-cover"
+														src="./images/selected-home/slide-1.jpg"
+														alt="slide image"
+													/>
+												</div>
+												<div
+													class="swiper-slide aspect-square h-auto! lg:aspect-video lg:max-h-[440px] lg:overflow-hidden lg:rounded-2xl"
+												>
+													<img
+														class="h-full w-full max-w-full object-cover"
+														src="./images/selected-home/slide-2.png"
+														alt="slide image"
+													/>
+												</div>
+												<div
+													class="swiper-slide aspect-square h-auto! lg:aspect-video lg:max-h-[440px] lg:overflow-hidden lg:rounded-2xl"
+												>
+													<img
+														class="h-full w-full max-w-full object-cover"
+														src="./images/selected-home/slide-1.jpg"
+														alt="slide image"
+													/>
+												</div>
+												<div
+													class="swiper-slide aspect-square h-auto! lg:aspect-video lg:max-h-[440px] lg:overflow-hidden lg:rounded-2xl"
+												>
+													<img
+														class="h-full w-full max-w-full object-cover"
+														src="./images/selected-home/slide-2.png"
+														alt="slide image"
+													/>
+												</div>
+												<div
+													class="swiper-slide aspect-square h-auto! lg:aspect-video lg:max-h-[440px] lg:overflow-hidden lg:rounded-2xl"
+												>
+													<img
+														class="h-full w-full max-w-full object-cover"
+														src="./images/selected-home/slide-1.jpg"
+														alt="slide image"
+													/>
+												</div>
+												<div
+													class="swiper-slide aspect-square h-auto! lg:aspect-video lg:max-h-[440px] lg:overflow-hidden lg:rounded-2xl"
+												>
+													<img
+														class="h-full w-full max-w-full object-cover"
+														src="./images/selected-home/slide-2.png"
+														alt="slide image"
+													/>
+												</div>
+												<div
+													class="swiper-slide aspect-square h-auto! lg:aspect-video lg:max-h-[440px] lg:overflow-hidden lg:rounded-2xl"
+												>
+													<img
+														class="h-full w-full max-w-full object-cover"
+														src="./images/selected-home/slide-1.jpg"
+														alt="slide image"
+													/>
+												</div>
+												<div
+													class="swiper-slide aspect-square h-auto! lg:aspect-video lg:max-h-[440px] lg:overflow-hidden lg:rounded-2xl"
+												>
+													<img
+														class="h-full w-full max-w-full object-cover"
+														src="./images/selected-home/slide-2.png"
+														alt="slide image"
+													/>
+												</div>
+											</div>
+										</div>
+										<!-- Slides Count -->
+										<div
+											class="absolute right-5 bottom-11 z-10 rounded bg-[#2D2826] px-2 py-[2px] md:hidden"
+										>
+											<p class="text-sm text-white">
+												<span class="current"></span>
+												/
+												<span class="total"></span>
+											</p>
+										</div>
+										<!-- Slider Thumbnails -->
+										<div
+											class="swiper swiper-selected-home-thumbnails relative mt-3 hidden! lg:block!"
+										>
+											<!-- Additional required wrapper -->
+											<div class="swiper-wrapper">
+												<!-- Slides -->
+												<div
+													class="swiper-slide cursor-pointer [&_img]:aspect-video [&_img]:size-[100px] [&_img]:rounded-lg"
+												>
+													<img
+														class="h-auto w-full max-w-full object-cover"
+														src="./images/selected-home/slide-1.jpg"
+														alt="product image"
+													/>
+												</div>
+												<div
+													class="swiper-slide cursor-pointer [&_img]:aspect-video [&_img]:size-[100px] [&_img]:rounded-lg"
+												>
+													<img
+														class="h-auto w-full max-w-full object-cover"
+														src="./images/selected-home/slide-2.png"
+														alt="product image"
+													/>
+												</div>
+												<div
+													class="swiper-slide cursor-pointer [&_img]:aspect-video [&_img]:size-[100px] [&_img]:rounded-lg"
+												>
+													<img
+														class="h-auto w-full max-w-full object-cover"
+														src="./images/selected-home/slide-1.jpg"
+														alt="product image"
+													/>
+												</div>
+												<div
+													class="swiper-slide cursor-pointer [&_img]:aspect-video [&_img]:size-[100px] [&_img]:rounded-lg"
+												>
+													<img
+														class="h-auto w-full max-w-full object-cover"
+														src="./images/selected-home/slide-2.png"
+														alt="product image"
+													/>
+												</div>
+												<div
+													class="swiper-slide cursor-pointer [&_img]:aspect-video [&_img]:size-[100px] [&_img]:rounded-lg"
+												>
+													<img
+														class="h-auto w-full max-w-full object-cover"
+														src="./images/selected-home/slide-1.jpg"
+														alt="product image"
+													/>
+												</div>
+												<div
+													class="swiper-slide cursor-pointer [&_img]:aspect-video [&_img]:size-[100px] [&_img]:rounded-lg"
+												>
+													<img
+														class="h-auto w-full max-w-full object-cover"
+														src="./images/selected-home/slide-2.png"
+														alt="product image"
+													/>
+												</div>
+												<div
+													class="swiper-slide cursor-pointer [&_img]:aspect-video [&_img]:size-[100px] [&_img]:rounded-lg"
+												>
+													<img
+														class="h-auto w-full max-w-full object-cover"
+														src="./images/selected-home/slide-1.jpg"
+														alt="product image"
+													/>
+												</div>
+												<div
+													class="swiper-slide cursor-pointer [&_img]:aspect-video [&_img]:size-[100px] [&_img]:rounded-lg"
+												>
+													<img
+														class="h-auto w-full max-w-full object-cover"
+														src="./images/selected-home/slide-2.png"
+														alt="product image"
+													/>
+												</div>
+												<div
+													class="swiper-slide cursor-pointer [&_img]:aspect-video [&_img]:size-[100px] [&_img]:rounded-lg"
+												>
+													<img
+														class="h-auto w-full max-w-full object-cover"
+														src="./images/selected-home/slide-1.jpg"
+														alt="product image"
+													/>
+												</div>
+												<div
+													class="swiper-slide cursor-pointer [&_img]:aspect-video [&_img]:size-[100px] [&_img]:rounded-lg"
+												>
+													<img
+														class="h-auto w-full max-w-full object-cover"
+														src="./images/selected-home/slide-2.png"
+														alt="product image"
+													/>
+												</div>
+											</div>
+
+											<!-- Buttons -->
+											<button
+												class="thumb-prev hover:bg-primary-hovered bg-primary absolute bottom-8 left-3 z-10! flex size-6 items-center justify-center rounded-full transition-colors"
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="6"
+													height="10"
+													viewBox="0 0 6 10"
+													fill="none"
+													class="rotate-180"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M5.77093 5.54025C5.91761 5.3994 6 5.20839 6 5.00923C6 4.81007 5.91761 4.61906 5.77093 4.47821L1.34511 0.229299C1.27294 0.157562 1.18661 0.100342 1.09116 0.0609786C0.995705 0.0216147 0.893043 0.000894977 0.789161 2.83584e-05C0.68528 -0.00083826 0.582259 0.0181658 0.486109 0.0559312C0.38996 0.0936966 0.302607 0.149467 0.229149 0.219989C0.15569 0.290511 0.0975976 0.374371 0.0582597 0.466677C0.0189218 0.558983 -0.000873164 0.657887 2.95397e-05 0.757616C0.000932243 0.857345 0.0225147 0.955903 0.0635176 1.04754C0.10452 1.13917 0.164122 1.22205 0.238846 1.29134L4.11154 5.00923L0.238846 8.72712C0.0963322 8.86878 0.0174745 9.0585 0.019257 9.25544C0.0210396 9.45237 0.10332 9.64075 0.248376 9.78001C0.393433 9.91927 0.589659 9.99826 0.794792 9.99997C0.999925 10.0017 1.19755 9.92598 1.34511 9.78916L5.77093 5.54025Z"
+														fill="white"
+													/>
+												</svg>
+											</button>
+											<button
+												class="thumb-next bg-primary hover:bg-primary-hovered absolute right-3 bottom-8 z-10 flex size-6 items-center justify-center rounded-full transition-colors"
+											>
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													width="6"
+													height="10"
+													viewBox="0 0 6 10"
+													fill="none"
+												>
+													<path
+														fill-rule="evenodd"
+														clip-rule="evenodd"
+														d="M5.77093 5.54025C5.91761 5.3994 6 5.20839 6 5.00923C6 4.81007 5.91761 4.61906 5.77093 4.47821L1.34511 0.229299C1.27294 0.157562 1.18661 0.100342 1.09116 0.0609786C0.995705 0.0216147 0.893043 0.000894977 0.789161 2.83584e-05C0.68528 -0.00083826 0.582259 0.0181658 0.486109 0.0559312C0.38996 0.0936966 0.302607 0.149467 0.229149 0.219989C0.15569 0.290511 0.0975976 0.374371 0.0582597 0.466677C0.0189218 0.558983 -0.000873164 0.657887 2.95397e-05 0.757616C0.000932243 0.857345 0.0225147 0.955903 0.0635176 1.04754C0.10452 1.13917 0.164122 1.22205 0.238846 1.29134L4.11154 5.00923L0.238846 8.72712C0.0963322 8.86878 0.0174745 9.0585 0.019257 9.25544C0.0210396 9.45237 0.10332 9.64075 0.248376 9.78001C0.393433 9.91927 0.589659 9.99826 0.794792 9.99997C0.999925 10.0017 1.19755 9.92598 1.34511 9.78916L5.77093 5.54025Z"
+														fill="white"
+													/>
+												</svg>
+											</button>
+										</div>
 									</div>
 									<!-- Product Name -->
 									<div
-										class="-mt-5 flex flex-col gap-5 md:mt-0 md:flex-row md:items-center md:justify-between"
+										class="relative z-0 -mx-6 -mt-5 flex flex-col gap-5 lg:mx-0 lg:mt-0 lg:flex-row lg:items-center lg:justify-between"
 									>
 										<div
-											class="flex flex-col items-center gap-2 rounded-t-[20px] bg-white pt-6 pb-5 md:items-start md:pt-0"
+											class="flex flex-col items-center gap-2 rounded-t-[20px] bg-white pt-6 pb-5 lg:items-start lg:pt-0"
 										>
 											<p
-												class="text-xl font-semibold tracking-[0.4px] md:text-2xl"
+												class="text-xl font-semibold tracking-[0.4px] lg:text-2xl"
 											>
 												Product
 											</p>
 											<p
-												class="text-xs tracking-[0.24px] text-[#838383] md:text-sm"
+												class="text-xs tracking-[0.24px] text-[#838383] lg:text-sm"
 											>
 												PAYLOADZ-EXPRESS-26
 											</p>
 										</div>
 
-										<div class="hidden items-center gap-4 md:-mr-2 md:flex">
+										<div class="hidden items-center gap-4 lg:-mr-2 lg:flex">
 											<a
 												href="#"
 												class="group flex items-center gap-2 rounded-lg p-2 tracking-[0.32px] text-[#424242] underline underline-offset-4 transition-colors hover:bg-gray-100"
@@ -264,14 +508,14 @@
 								</div>
 
 								<div
-									class="space-y-3 border-y border-[#DDD] py-5 md:border-0 md:py-10"
+									class="space-y-3 border-y border-[#DDD] py-5 lg:border-0 lg:py-10"
 								>
 									<p class="font-semibold tracking-[0.32px] text-[#212121]">
 										Description
 									</p>
-									<div class="space-y-5 md:space-y-6">
+									<div class="space-y-5 lg:space-y-6">
 										<p
-											class="text-sm tracking-[0.28px] text-[#414449] md:text-base md:tracking-[0.32px]"
+											class="text-sm tracking-[0.28px] text-[#414449] lg:text-base lg:tracking-[0.32px]"
 										>
 											This innovative software solution streamlines workflow
 											processes, enhances team collaboration, and boosts overall
@@ -294,11 +538,11 @@
 								</div>
 
 								<div
-									class="space-y-3 border-y border-[#DDD] py-5 md:border-b-0 md:py-10"
+									class="space-y-3 border-y border-[#DDD] py-5 lg:border-b-0 lg:py-10"
 								>
-									<div class="space-y-5 md:space-y-6">
+									<div class="space-y-5 lg:space-y-6">
 										<p
-											class="text-sm tracking-[0.28px] text-[#414449] md:text-base md:tracking-[0.32px]"
+											class="text-sm tracking-[0.28px] text-[#414449] lg:text-base lg:tracking-[0.32px]"
 										>
 											This innovative software solution streamlines workflow
 											processes, enhances team collaboration, and boosts overall
@@ -368,7 +612,7 @@
 							</div>
 							<!-- Right Side -->
 							<div
-								class="w-full md:sticky md:top-5 md:left-0 md:flex md:max-w-[280px] md:shrink-0 lg:max-w-[400px]"
+								class="w-full shrink-0 lg:sticky lg:top-5 lg:left-0 lg:flex lg:max-w-[400px]"
 							>
 								<div class="w-full space-y-6 py-4 md:pt-0">
 									<a
