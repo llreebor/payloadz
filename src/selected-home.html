@@ -467,8 +467,8 @@
 										</div>
 
 										<div class="hidden items-center gap-4 lg:-mr-2 lg:flex">
-											<a
-												href="#"
+											<button
+												id="modal-btn-1"
 												class="group flex items-center gap-2 rounded-lg p-2 tracking-[0.32px] text-[#424242] underline underline-offset-4 transition-colors hover:bg-gray-100"
 											>
 												<svg
@@ -487,7 +487,7 @@
 													/>
 												</svg>
 												Share
-											</a>
+											</button>
 
 											<a
 												href="#"
@@ -690,20 +690,20 @@
 											</li>
 										</ul>
 
-										<a
-											href="#"
-											class="flex items-center justify-center gap-2 rounded bg-[#E6E6E6] p-3 text-sm font-semibold text-[#393939] transition-colors hover:bg-[#E1E1E1]"
+										<button
+											id="modal-btn-6"
+											class="flex w-full items-center justify-center gap-2 rounded bg-[#E6E6E6] p-3 text-sm font-semibold text-[#393939] transition-colors hover:bg-[#E1E1E1]"
 										>
 											Contact Seller
-										</a>
+										</button>
 
 										<p class="text-center text-sm text-[#666]">
 											You won’t be charged yet
 										</p>
 									</div>
 
-									<a
-										href="#"
+									<button
+										id="modal-btn-7"
 										class="group hover:text-primary flex items-center justify-center gap-2 text-sm tracking-[0.32px] text-[#424242] underline underline-offset-4 transition-colors"
 									>
 										<svg
@@ -721,7 +721,7 @@
 										</svg>
 
 										Report this listing
-									</a>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -1229,12 +1229,12 @@
 								Show all 79 reviews
 							</a>
 
-							<a
-								href="#"
+							<button
+								id="modal-btn-5"
 								class="group hover:text-primary flex items-center justify-center gap-2 text-xs tracking-[0.32px] text-[#393939] underline underline-offset-4 transition-colors md:text-sm"
 							>
 								Learn how reviews work
-							</a>
+							</button>
 						</div>
 
 						<!-- Divider -->
@@ -1786,6 +1786,569 @@
 					</li>
 				</ul>
 			</nav>
+
+			<!-- Modals -->
+			<!-- Share this place modal -->
+			<div
+				id="modal-1"
+				role="dialog"
+				aria-modal="true"
+				class="invisible fixed top-0 left-0 z-20 flex h-screen w-screen items-center justify-center bg-[#DDDDDD]/80 p-6 opacity-0 transition-all"
+			>
+				<!-- Modal -->
+				<div
+					class="shadow-modal relative w-full max-w-[628px] rounded-[20px] bg-white py-6 md:rounded-[40px]"
+				>
+					<!-- Close Btn -->
+					<div class="px-6">
+						<button
+							id="modal-close-btn-1"
+							class="group absolute top-6 right-6 md:static"
+							aria-label="Close modal"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M11.9998 13.3998L7.0998 18.2998C6.91647 18.4831 6.68314 18.5748 6.3998 18.5748C6.11647 18.5748 5.88314 18.4831 5.6998 18.2998C5.51647 18.1165 5.4248 17.8831 5.4248 17.5998C5.4248 17.3165 5.51647 17.0831 5.6998 16.8998L10.5998 11.9998L5.6998 7.0998C5.51647 6.91647 5.4248 6.68314 5.4248 6.3998C5.4248 6.11647 5.51647 5.88314 5.6998 5.6998C5.88314 5.51647 6.11647 5.4248 6.3998 5.4248C6.68314 5.4248 6.91647 5.51647 7.0998 5.6998L11.9998 10.5998L16.8998 5.6998C17.0831 5.51647 17.3165 5.4248 17.5998 5.4248C17.8831 5.4248 18.1165 5.51647 18.2998 5.6998C18.4831 5.88314 18.5748 6.11647 18.5748 6.3998C18.5748 6.68314 18.4831 6.91647 18.2998 7.0998L13.3998 11.9998L18.2998 16.8998C18.4831 17.0831 18.5748 17.3165 18.5748 17.5998C18.5748 17.8831 18.4831 18.1165 18.2998 18.2998C18.1165 18.4831 17.8831 18.5748 17.5998 18.5748C17.3165 18.5748 17.0831 18.4831 16.8998 18.2998L11.9998 13.3998Z"
+									fill="black"
+								/>
+							</svg>
+						</button>
+					</div>
+					<!-- Header -->
+					<div class="px-6 md:mt-6">
+						<!-- Title -->
+						<h2 class="text-xl font-semibold tracking-[0.4px]">
+							Share this place
+						</h2>
+					</div>
+
+					<!-- Content -->
+					<div class="mt-6 px-6">
+						<div class="mt-6 flex items-center gap-5">
+							<div class="size-20 shrink-0 overflow-hidden rounded-lg">
+								<img src="./images/global/modal-img.png" alt="modal image" />
+							</div>
+							<ul class="flex flex-wrap items-center gap-1">
+								<li
+									class="relative flex items-center gap-[2px] pl-2 text-sm text-[#232323] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#232323] first:pl-0 first:after:hidden md:font-semibold"
+								>
+									Villa in Nusapenida
+								</li>
+								<li
+									class="relative flex items-center gap-[2px] pl-2 text-sm text-[#232323] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#232323] first:pl-0 first:after:hidden md:font-semibold"
+								>
+									<svg
+										xmlns="http://www.w3.org/2000/svg"
+										width="20"
+										height="21"
+										viewBox="0 0 20 21"
+										fill="none"
+									>
+										<path
+											d="M9.99994 14.8921L13.4583 16.9838C14.0916 17.3671 14.8666 16.8005 14.6999 16.0838L13.7833 12.1505L16.8416 9.50046C17.3999 9.01712 17.0999 8.10046 16.3666 8.04212L12.3416 7.70046L10.7666 3.98379C10.4833 3.30879 9.51661 3.30879 9.23327 3.98379L7.65827 7.69212L3.63327 8.03379C2.89994 8.09212 2.59994 9.00879 3.15827 9.49212L6.21661 12.1421L5.29994 16.0755C5.13327 16.7921 5.90827 17.3588 6.5416 16.9755L9.99994 14.8921Z"
+											fill="#232323"
+										/>
+									</svg>
+									4.82
+								</li>
+								<li
+									class="relative flex items-center gap-[2px] pl-2 text-sm text-[#232323] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#232323] first:pl-0 first:after:hidden md:font-semibold"
+								>
+									1 bedroom
+								</li>
+								<li
+									class="relative flex items-center gap-[2px] pl-2 text-sm text-[#232323] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#232323] first:pl-0 first:after:hidden md:font-semibold"
+								>
+									1 bed
+								</li>
+								<li
+									class="relative flex items-center gap-[2px] pl-2 text-sm text-[#232323] after:absolute after:top-1/2 after:left-0 after:size-1 after:-translate-y-1/2 after:rounded-full after:bg-[#232323] first:pl-0 first:after:hidden md:font-semibold"
+								>
+									1.5 baths
+								</li>
+							</ul>
+						</div>
+
+						<ul class="mt-6 grid grid-cols-2 gap-2 min-[420px]:gap-4">
+							<li>
+								<button
+									class="flex w-full items-center gap-2 rounded-2xl border-[1.5px] border-[#E1E1E1] px-2 py-3 transition-colors hover:bg-gray-100 min-[420px]:gap-4 min-[420px]:p-4"
+								>
+									<img src="./images/icons/copy-bold.svg" alt="icon" />
+									Copy Link
+								</button>
+							</li>
+							<li>
+								<button
+									class="flex w-full items-center gap-2 rounded-2xl border-[1.5px] border-[#E1E1E1] px-2 py-3 transition-colors hover:bg-gray-100 min-[420px]:gap-4 min-[420px]:p-4"
+								>
+									<img
+										class="w-5"
+										src="./images/icons/streamline-cyber_email-2.svg"
+										alt="icon"
+									/>
+									Email
+								</button>
+							</li>
+							<li>
+								<button
+									class="flex w-full items-center gap-2 rounded-2xl border-[1.5px] border-[#E1E1E1] px-2 py-3 transition-colors hover:bg-gray-100 min-[420px]:gap-4 min-[420px]:p-4"
+								>
+									<img
+										class="w-5"
+										src="./images/icons/simple-icons_imessage.svg"
+										alt="icon"
+									/>
+									Messages
+								</button>
+							</li>
+							<li>
+								<button
+									class="flex w-full items-center gap-2 rounded-2xl border-[1.5px] border-[#E1E1E1] px-2 py-3 transition-colors hover:bg-gray-100 min-[420px]:gap-4 min-[420px]:p-4"
+								>
+									<img
+										class="w-5"
+										src="./images/icons/ic_baseline-whatsapp.svg"
+										alt="icon"
+									/>
+									WhatsApp
+								</button>
+							</li>
+							<li>
+								<button
+									class="flex w-full items-center gap-2 rounded-2xl border-[1.5px] border-[#E1E1E1] px-2 py-3 transition-colors hover:bg-gray-100 min-[420px]:gap-4 min-[420px]:p-4"
+								>
+									<img
+										class="w-5"
+										src="./images/icons/mage_messenger.svg"
+										alt="icon"
+									/>
+									Mesenger
+								</button>
+							</li>
+							<li>
+								<button
+									class="flex w-full items-center gap-2 rounded-2xl border-[1.5px] border-[#E1E1E1] px-2 py-3 transition-colors hover:bg-gray-100 min-[420px]:gap-4 min-[420px]:p-4"
+								>
+									<img
+										class="w-5"
+										src="./images/icons/ic_outline-facebook.svg"
+										alt="icon"
+									/>
+									Facebook
+								</button>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="flex items-center gap-2 rounded-2xl border-[1.5px] border-[#E1E1E1] px-2 py-3 transition-colors hover:bg-gray-100 min-[420px]:gap-4 min-[420px]:p-4"
+								>
+									<img
+										class="w-5"
+										src="./images/icons/pajamas_twitter.svg"
+										alt="icon"
+									/>
+									Twitter
+								</a>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="flex items-center gap-2 rounded-2xl border-[1.5px] border-[#E1E1E1] px-2 py-3 transition-colors hover:bg-gray-100 min-[420px]:gap-4 min-[420px]:p-4"
+								>
+									<img
+										class="w-5"
+										src="./images/icons/fluent-mdl2_embed.svg"
+										alt="icon"
+									/>
+									Embed
+								</a>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="flex items-center gap-2 rounded-2xl border-[1.5px] border-[#E1E1E1] px-2 py-3 transition-colors hover:bg-gray-100 min-[420px]:gap-4 min-[420px]:p-4"
+								>
+									<img
+										class="w-5"
+										src="./images/icons/ep_more.svg"
+										alt="icon"
+									/>
+									More Options
+								</a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- Footer -->
+					<div></div>
+				</div>
+			</div>
+
+			<!-- Contact Seller -->
+			<div
+				id="modal-6"
+				role="dialog"
+				aria-modal="true"
+				class="invisible fixed top-0 left-0 z-20 flex h-screen w-screen items-center justify-center bg-[#DDDDDD]/80 p-6 opacity-0 transition-all"
+			>
+				<!-- Modal -->
+				<div
+					class="shadow-modal relative w-full max-w-[628px] rounded-[20px] bg-white py-6 md:rounded-[40px]"
+				>
+					<!-- Close Btn -->
+					<div class="px-6">
+						<button
+							id="modal-close-btn-6"
+							class="group absolute top-6 right-6 md:static"
+							aria-label="Close modal"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M11.9998 13.3998L7.0998 18.2998C6.91647 18.4831 6.68314 18.5748 6.3998 18.5748C6.11647 18.5748 5.88314 18.4831 5.6998 18.2998C5.51647 18.1165 5.4248 17.8831 5.4248 17.5998C5.4248 17.3165 5.51647 17.0831 5.6998 16.8998L10.5998 11.9998L5.6998 7.0998C5.51647 6.91647 5.4248 6.68314 5.4248 6.3998C5.4248 6.11647 5.51647 5.88314 5.6998 5.6998C5.88314 5.51647 6.11647 5.4248 6.3998 5.4248C6.68314 5.4248 6.91647 5.51647 7.0998 5.6998L11.9998 10.5998L16.8998 5.6998C17.0831 5.51647 17.3165 5.4248 17.5998 5.4248C17.8831 5.4248 18.1165 5.51647 18.2998 5.6998C18.4831 5.88314 18.5748 6.11647 18.5748 6.3998C18.5748 6.68314 18.4831 6.91647 18.2998 7.0998L13.3998 11.9998L18.2998 16.8998C18.4831 17.0831 18.5748 17.3165 18.5748 17.5998C18.5748 17.8831 18.4831 18.1165 18.2998 18.2998C18.1165 18.4831 17.8831 18.5748 17.5998 18.5748C17.3165 18.5748 17.0831 18.4831 16.8998 18.2998L11.9998 13.3998Z"
+									fill="black"
+								/>
+							</svg>
+						</button>
+					</div>
+					<!-- Header -->
+					<div class="space-y-2 px-6 md:mt-6">
+						<!-- Title -->
+						<h2 class="text-xl font-semibold tracking-[0.4px]">
+							Contact Seller
+						</h2>
+					</div>
+
+					<!-- Content -->
+					<div class="mt-6 px-6">
+						<form action="#" class="space-y-5">
+							<label for="email" class="label">
+								Your Email*:
+								<input
+									required
+									type="email"
+									name="email"
+									id="email"
+									class="input"
+									placeholder="Write your Email Address here"
+								/>
+							</label>
+
+							<label for="comment_message" class="label">
+								Comments*:
+								<textarea
+									placeholder="Write your Review Details here"
+									required
+									name="comment_message"
+									id="comment_message"
+									class="input min-h-[150px] resize-none"
+								></textarea>
+							</label>
+						</form>
+
+						<div class="mt-6 flex items-center justify-center">
+							<img src="./images/global/captcha.png" alt="captcha" />
+						</div>
+					</div>
+
+					<!-- Footer -->
+					<div class="mt-8 flex w-full border-t border-t-[#DDD] p-6 pt-4 pb-0">
+						<button
+							class="ml-auto flex w-full max-w-full items-center justify-center rounded-lg bg-[#222] px-6 py-3 tracking-[0.32px] text-white transition-colors hover:bg-[#222]/90 md:max-w-fit md:min-w-[120px]"
+						>
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- Payloadz Add Review modal -->
+			<div
+				id="modal-5"
+				role="dialog"
+				aria-modal="true"
+				class="invisible fixed top-0 left-0 z-20 h-full w-full overflow-auto bg-[#DDDDDD]/80 p-6 opacity-0 transition-all"
+			>
+				<div
+					class="modal-overlay flex min-h-screen items-center justify-center"
+				>
+					<!-- Modal -->
+					<div
+						class="shadow-modal relative w-full max-w-[628px] rounded-[20px] bg-white py-6 md:rounded-[40px]"
+					>
+						<!-- Close Btn -->
+						<div class="px-6">
+							<button
+								id="modal-close-btn-5"
+								class="group absolute top-6 right-6 md:static"
+								aria-label="Close modal"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+								>
+									<path
+										d="M11.9998 13.3998L7.0998 18.2998C6.91647 18.4831 6.68314 18.5748 6.3998 18.5748C6.11647 18.5748 5.88314 18.4831 5.6998 18.2998C5.51647 18.1165 5.4248 17.8831 5.4248 17.5998C5.4248 17.3165 5.51647 17.0831 5.6998 16.8998L10.5998 11.9998L5.6998 7.0998C5.51647 6.91647 5.4248 6.68314 5.4248 6.3998C5.4248 6.11647 5.51647 5.88314 5.6998 5.6998C5.88314 5.51647 6.11647 5.4248 6.3998 5.4248C6.68314 5.4248 6.91647 5.51647 7.0998 5.6998L11.9998 10.5998L16.8998 5.6998C17.0831 5.51647 17.3165 5.4248 17.5998 5.4248C17.8831 5.4248 18.1165 5.51647 18.2998 5.6998C18.4831 5.88314 18.5748 6.11647 18.5748 6.3998C18.5748 6.68314 18.4831 6.91647 18.2998 7.0998L13.3998 11.9998L18.2998 16.8998C18.4831 17.0831 18.5748 17.3165 18.5748 17.5998C18.5748 17.8831 18.4831 18.1165 18.2998 18.2998C18.1165 18.4831 17.8831 18.5748 17.5998 18.5748C17.3165 18.5748 17.0831 18.4831 16.8998 18.2998L11.9998 13.3998Z"
+										fill="black"
+									/>
+								</svg>
+							</button>
+						</div>
+						<!-- Header -->
+						<div class="space-y-2 px-6 md:mt-6">
+							<!-- Title -->
+							<h2 class="text-xl font-semibold tracking-[0.4px]">
+								Payloadz Add Review modal
+							</h2>
+							<div class="space-y-5">
+								<p class="text-sm">
+									Please enter your email address used for payment so we can
+									verify that you purchased this ite, Your eail will only be
+									used for looking up your order.
+								</p>
+							</div>
+						</div>
+
+						<!-- Content -->
+						<div class="mt-6 px-6">
+							<form action="#" class="space-y-5">
+								<label for="email" class="label">
+									Email Address*:
+									<input
+										required
+										type="email"
+										name="email"
+										id="email"
+										class="input"
+										placeholder="Write your Email Address here"
+									/>
+								</label>
+								<label for="review_title" class="label">
+									Review Title*:
+									<input
+										required
+										type="text"
+										name="review_title"
+										id="review_title"
+										class="input"
+										placeholder="Write your Review Title here"
+									/>
+								</label>
+								<label for="name" class="label">
+									Name*:
+									<input
+										required
+										type="text"
+										name="name"
+										id="name"
+										class="input"
+										placeholder="Write your Name here"
+									/>
+								</label>
+								<div class="label">
+									Rating*:
+									<div class="flex flex-wrap gap-3">
+										<!-- Excellent -->
+										<label class="cursor-pointer">
+											<input
+												type="radio"
+												name="rating"
+												value="excellent"
+												class="peer hidden"
+												checked
+											/>
+											<span
+												class="rounded-lg px-4 py-2 text-sm font-medium tracking-[0.28px] text-[#393939] transition-colors peer-checked:bg-[#E6E6E6] hover:bg-gray-100"
+											>
+												Excellent
+											</span>
+										</label>
+
+										<!-- Very good -->
+										<label class="cursor-pointer">
+											<input
+												type="radio"
+												name="rating"
+												value="very-good"
+												class="peer hidden"
+											/>
+											<span
+												class="rounded-lg px-4 py-2 text-sm font-medium tracking-[0.28px] text-[#393939] transition-colors peer-checked:bg-[#E6E6E6] hover:bg-gray-100"
+											>
+												Very good
+											</span>
+										</label>
+
+										<!-- Good -->
+										<label class="cursor-pointer">
+											<input
+												type="radio"
+												name="rating"
+												value="good"
+												class="peer hidden"
+											/>
+											<span
+												class="rounded-lg px-4 py-2 text-sm font-medium tracking-[0.28px] text-[#393939] transition-colors peer-checked:bg-[#E6E6E6] hover:bg-gray-100"
+											>
+												Good
+											</span>
+										</label>
+
+										<!-- Poor -->
+										<label class="cursor-pointer">
+											<input
+												type="radio"
+												name="rating"
+												value="poor"
+												class="peer hidden"
+											/>
+											<span
+												class="rounded-lg px-4 py-2 text-sm font-medium tracking-[0.28px] text-[#393939] transition-colors peer-checked:bg-[#E6E6E6] hover:bg-gray-100"
+											>
+												Poor
+											</span>
+										</label>
+
+										<!-- Very Poor -->
+										<label class="cursor-pointer">
+											<input
+												type="radio"
+												name="rating"
+												value="very-poor"
+												class="peer hidden"
+											/>
+											<span
+												class="rounded-lg px-4 py-2 text-sm font-medium tracking-[0.28px] text-[#393939] transition-colors peer-checked:bg-[#E6E6E6] hover:bg-gray-100"
+											>
+												Very Poor
+											</span>
+										</label>
+									</div>
+								</div>
+								<label for="review_details" class="label">
+									Review Details*:
+									<textarea
+										placeholder="Write your Review Details here"
+										required
+										name="review_details"
+										id="review_details"
+										class="input min-h-[150px] resize-none"
+									></textarea>
+								</label>
+							</form>
+						</div>
+
+						<!-- Footer -->
+						<div
+							class="mt-8 flex w-full border-t border-t-[#DDD] p-6 pt-4 pb-0"
+						>
+							<button
+								class="ml-auto flex w-full max-w-full items-center justify-center rounded-lg bg-[#222] px-6 py-3 tracking-[0.32px] text-white transition-colors hover:bg-[#222]/90 md:max-w-fit md:min-w-[120px]"
+							>
+								Submit Review
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Payloadz report this item modal -->
+			<div
+				id="modal-7"
+				role="dialog"
+				aria-modal="true"
+				class="invisible fixed top-0 left-0 z-20 flex h-screen w-screen items-center justify-center bg-[#DDDDDD]/80 p-6 opacity-0 transition-all"
+			>
+				<!-- Modal -->
+				<div
+					class="shadow-modal relative w-full max-w-[628px] rounded-[20px] bg-white py-6 md:rounded-[40px]"
+				>
+					<!-- Close Btn -->
+					<div class="px-6">
+						<button
+							id="modal-close-btn-7"
+							class="group absolute top-6 right-6 md:static"
+							aria-label="Close modal"
+						>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								fill="none"
+							>
+								<path
+									d="M11.9998 13.3998L7.0998 18.2998C6.91647 18.4831 6.68314 18.5748 6.3998 18.5748C6.11647 18.5748 5.88314 18.4831 5.6998 18.2998C5.51647 18.1165 5.4248 17.8831 5.4248 17.5998C5.4248 17.3165 5.51647 17.0831 5.6998 16.8998L10.5998 11.9998L5.6998 7.0998C5.51647 6.91647 5.4248 6.68314 5.4248 6.3998C5.4248 6.11647 5.51647 5.88314 5.6998 5.6998C5.88314 5.51647 6.11647 5.4248 6.3998 5.4248C6.68314 5.4248 6.91647 5.51647 7.0998 5.6998L11.9998 10.5998L16.8998 5.6998C17.0831 5.51647 17.3165 5.4248 17.5998 5.4248C17.8831 5.4248 18.1165 5.51647 18.2998 5.6998C18.4831 5.88314 18.5748 6.11647 18.5748 6.3998C18.5748 6.68314 18.4831 6.91647 18.2998 7.0998L13.3998 11.9998L18.2998 16.8998C18.4831 17.0831 18.5748 17.3165 18.5748 17.5998C18.5748 17.8831 18.4831 18.1165 18.2998 18.2998C18.1165 18.4831 17.8831 18.5748 17.5998 18.5748C17.3165 18.5748 17.0831 18.4831 16.8998 18.2998L11.9998 13.3998Z"
+									fill="black"
+								/>
+							</svg>
+						</button>
+					</div>
+					<!-- Header -->
+					<div class="space-y-2 px-6 md:mt-6">
+						<!-- Title -->
+						<h2 class="text-xl font-semibold tracking-[0.4px]">
+							Report this place
+						</h2>
+					</div>
+
+					<!-- Content -->
+					<div class="mt-6 px-6">
+						<form action="#" class="space-y-5">
+							<label for="email" class="label">
+								Your Email*:
+								<input
+									required
+									type="email"
+									name="email"
+									id="email"
+									class="input"
+									placeholder="Write your Email Address here"
+								/>
+							</label>
+
+							<label for="comment_message" class="label">
+								Comments*:
+								<textarea
+									placeholder="Write your Review Details here"
+									required
+									name="comment_message"
+									id="comment_message"
+									class="input min-h-[150px] resize-none"
+								></textarea>
+							</label>
+						</form>
+
+						<div class="mt-6 flex items-center justify-center">
+							<img src="./images/global/captcha.png" alt="captcha" />
+						</div>
+					</div>
+
+					<!-- Footer -->
+					<div class="mt-8 flex w-full border-t border-t-[#DDD] p-6 pt-4 pb-0">
+						<button
+							class="ml-auto flex w-full max-w-full items-center justify-center rounded-lg bg-[#222] px-6 py-3 tracking-[0.32px] text-white transition-colors hover:bg-[#222]/90 md:max-w-fit md:min-w-[120px]"
+						>
+							Submit
+						</button>
+					</div>
+				</div>
+			</div>
 
 			<!-- Footer -->
 			<footer class="bg-[#F8F8F8] py-10 pb-[98px] lg:py-10">
