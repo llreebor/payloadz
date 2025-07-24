@@ -165,7 +165,6 @@ const thumbs = new Swiper(".swiper-selected-home-thumbnails", {
 		prevEl: ".thumb-prev",
 	},
 })
-
 new Swiper(".swiper-selected-home", {
 	spaceBetween: 12,
 	slidesPerView: 1,
@@ -187,6 +186,7 @@ new Swiper(".swiper-selected-home", {
 		prevEl: ".thumb-prev",
 	},
 })
+
 // Show More Review
 function showMoreReviews() {
 	const buttons = document.querySelectorAll(".show-more-btn")
@@ -205,3 +205,82 @@ function showMoreReviews() {
 	})
 }
 showMoreReviews()
+
+// Modal
+function toggleModal(btnId, modalId, closeBtnId) {
+	// Select DOM elements
+	const modal = document.getElementById(modalId)
+	const btn = document.getElementById(btnId)
+	const close = document.getElementById(closeBtnId)
+	const body = document.querySelector("body")
+
+	// Exit if any required element is missing
+	if (!modal || !btn || !close || !body) return
+
+	// Get focusable elements for focus trapping
+	const focusableElements = modal.querySelectorAll(
+		'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+	)
+	const firstFocusable = focusableElements[0]
+	const lastFocusable = focusableElements[focusableElements.length - 1]
+
+	const toggleModalState = (isOpen) => {
+		modal.classList.toggle("opacity-0", !isOpen)
+		modal.classList.toggle("invisible", !isOpen)
+		body.classList.toggle("overflow-hidden", isOpen)
+		btn.setAttribute("aria-expanded", isOpen)
+	}
+
+	// Closes the modal and returns focus to the open button
+	const closeModal = () => {
+		toggleModalState(false)
+		btn.focus() // Restore focus to the open button
+	}
+
+	// Handle open button click
+	btn.addEventListener("click", () => {
+		toggleModalState(true)
+		if (firstFocusable) firstFocusable.focus() // Set focus to first focusable element
+	})
+
+	// Handle close button click
+	close.addEventListener("click", closeModal)
+
+	// Handle click on modal backdrop to close
+	modal.addEventListener("click", (e) => {
+		if (e.target === modal) {
+			closeModal()
+		}
+	})
+
+	// Handle Escape key to close modal
+	document.addEventListener("keydown", (e) => {
+		if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+			closeModal()
+		}
+	})
+
+	// Implement focus trap for accessibility
+	modal.addEventListener("keydown", (e) => {
+		if (e.key === "Tab" && !modal.classList.contains("hidden")) {
+			if (e.shiftKey && document.activeElement === firstFocusable) {
+				e.preventDefault()
+				lastFocusable.focus() // Move to last focusable element
+			} else if (!e.shiftKey && document.activeElement === lastFocusable) {
+				e.preventDefault()
+				firstFocusable.focus() // Move to first focusable element
+			}
+		}
+	})
+
+	// Ensure modal is closed on page load
+	toggleModalState(true)
+}
+// toggleModal("modal-btn-1", "modal-1", "modal-close-btn-1")
+// toggleModal("modal-btn-2", "modal-2", "modal-close-btn-2")
+// toggleModal("modal-btn-3", "modal-3", "modal-close-btn-3")
+// toggleModal("modal-btn-4", "modal-4", "modal-close-btn-4")
+// toggleModal("modal-btn-5", "modal-5", "modal-close-btn-5")
+// toggleModal("modal-btn-6", "modal-6", "modal-close-btn-6")
+// toggleModal("modal-btn-7", "modal-7", "modal-close-btn-7")
+toggleModal("modal-btn-8", "modal-8", "modal-close-btn-8")

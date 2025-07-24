@@ -19,6 +19,8 @@
 	--shadow-input: 0px 2px 16px 0px rgba(0, 0, 0, 0.12);
 	--shadow-slide-badge: 0px 1px 1px 0px rgba(0, 0, 0, 0.08);
 	--shadow-base: 0px 2px 12px 0px rgba(0, 0, 0, 0.16);
+	--shadow-modal: 0 1px 24px 0 rgba(0, 0, 0, 0.12);
+
 	/* Animations */
 	--animate-fadeIn: fadeIn 0.3s ease-out;
 
@@ -45,6 +47,9 @@
 	button {
 		@apply cursor-pointer;
 	}
+	p {
+		@apply tracking-[0.28px];
+	}
 }
 /* Custom Components */
 @layer components {
@@ -54,7 +59,11 @@
 	}
 	/* Input */
 	.input {
-		@apply shadow-input focus:outline-primary flex w-full rounded-full border border-[#DDD] px-4 py-[15px] pr-12 text-sm tracking-[0.28px] placeholder:text-[#A9AFAD];
+		@apply flex w-full rounded-lg border border-[#DDD] px-4 py-[15px] pr-12 text-sm tracking-[0.28px] placeholder:font-normal placeholder:text-[#A9AFAD] focus:outline-[#222];
+	}
+	/* Label */
+	.label {
+		@apply flex flex-col gap-2 font-semibold text-[#1C1C1C];
 	}
 	/* Nav Link */
 	.nav-link {
