@@ -248,7 +248,7 @@ function toggleModal(btnId, modalId, closeBtnId) {
 
 	// Handle click on modal backdrop to close
 	modal.addEventListener("click", (e) => {
-		if (e.target === modal) {
+		if (e.target === modal || e.target.classList.contains("modal-overlay")) {
 			closeModal()
 		}
 	})
@@ -274,13 +274,13 @@ function toggleModal(btnId, modalId, closeBtnId) {
 	})
 
 	// Ensure modal is closed on page load
-	toggleModalState(true)
+	toggleModalState(false)
 }
-// toggleModal("modal-btn-1", "modal-1", "modal-close-btn-1")
-// toggleModal("modal-btn-2", "modal-2", "modal-close-btn-2")
-// toggleModal("modal-btn-3", "modal-3", "modal-close-btn-3")
-// toggleModal("modal-btn-4", "modal-4", "modal-close-btn-4")
-// toggleModal("modal-btn-5", "modal-5", "modal-close-btn-5")
-// toggleModal("modal-btn-6", "modal-6", "modal-close-btn-6")
-// toggleModal("modal-btn-7", "modal-7", "modal-close-btn-7")
+toggleModal("modal-btn-1", "modal-1", "modal-close-btn-1")
+toggleModal("modal-btn-2", "modal-2", "modal-close-btn-2")
+toggleModal("modal-btn-3", "modal-3", "modal-close-btn-3")
+toggleModal("modal-btn-4", "modal-4", "modal-close-btn-4")
+toggleModal("modal-btn-5", "modal-5", "modal-close-btn-5")
+toggleModal("modal-btn-6", "modal-6", "modal-close-btn-6")
+toggleModal("modal-btn-7", "modal-7", "modal-close-btn-7")
 toggleModal("modal-btn-8", "modal-8", "modal-close-btn-8")
